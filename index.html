@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le coin des curieux — Livres de Maîtresse Christèle et Christèle Gierden</title>
+<meta name="description" content="Le coin des curieux : les livres Lily et Téo de Maîtresse Christèle pour apprendre en s'amusant (3-12 ans) et la collection Les grandes questions à la portée de tous de Christèle Gierden. Disponibles sur Amazon.">
+<link rel="icon" type="image/png" href="logo.png">
+<meta property="og:title" content="Le coin des curieux — Parce que la curiosité n'a pas d'âge">
+<meta property="og:description" content="Lily et Téo pour les 3-12 ans, Les grandes questions à la portée de tous pour les grands curieux. Disponibles sur Amazon.">
+<meta property="og:image" content="https://lecoindescurieux.eu/og.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Andika:wght@400;700&family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fffaf0; --ink:#2b2a33; --muted:#6b6878;
+  --green:#2f8f5b; --green-d:#1f6b42; --gold:#e3a723; --gold-l:#f6d77a;
+  --sky:#3b9fd8; --coral:#ef7b5a; --violet:#8d6bd6;
+  --night:#0d0b1f; --night2:#17142f; --sgold:#d9b25f;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:20;background:rgba(255,250,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #f0e6cf}
+nav .wrap{display:flex;align-items:center;gap:18px;height:64px}
+.logo{font-family:Fredoka;font-weight:700;font-size:1.35rem;text-decoration:none;display:flex;align-items:center;gap:9px}
+.logo .dot{width:30px;height:30px;border-radius:50%;background:conic-gradient(var(--gold),var(--green),var(--sky),var(--coral),var(--gold));display:grid;place-items:center}
+.logo .dot::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--cream)}
+nav .links{margin-left:auto;display:flex;gap:22px;font-weight:700;font-size:.95rem}
+nav .links a{text-decoration:none;color:var(--muted)}
+nav .links a:hover{color:var(--green)}
+@media(max-width:820px){nav .links{display:none}}
+
+/* HERO */
+.hero{padding:70px 0 40px;text-align:center;position:relative;overflow:hidden}
+.hero h1{font-family:Fredoka;font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.1;font-weight:700;max-width:820px;margin:0 auto}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:640px;margin:18px auto 0}
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px;text-align:left}
+@media(max-width:760px){.doors{grid-template-columns:1fr}}
+.door{border-radius:24px;padding:30px;text-decoration:none;display:flex;flex-direction:column;gap:10px;min-height:230px;transition:transform .2s, box-shadow .2s}
+.door:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(0,0,0,.35)}
+.door .tag{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.door h2{font-size:1.75rem;line-height:1.15}
+.door .go{margin-top:auto;font-weight:800}
+.door.kids{background:linear-gradient(135deg,#fff3c9,#d9f2df);border:2px solid #f3dc8d}
+.door.kids h2{font-family:Fredoka;color:var(--green-d)}
+.door.sci{background:radial-gradient(circle at 80% 20%,#3a2f6b 0,var(--night2) 45%,var(--night) 100%);color:#efe6cf;border:1px solid #3a3260}
+.door.sci h2{font-family:"Cormorant Garamond";font-weight:700;font-size:2rem;color:var(--sgold)}
+
+/* NOEL */
+.noel{margin:30px 0 10px;text-align:left;border-radius:24px;background:linear-gradient(120deg,#9e1b2f,#c7372f 55%,#e0a22a);color:#fff;padding:30px 34px;display:grid;grid-template-columns:1.1fr 2fr;gap:28px;align-items:center}
+@media(max-width:860px){.noel{grid-template-columns:1fr}}
+.noel h2{font-family:Fredoka;font-size:2rem;line-height:1.1}
+.noel p{opacity:.92;margin-top:8px}
+.noel .gifts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:560px){.noel .gifts{grid-template-columns:1fr}}
+.gift{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:16px;padding:14px;text-decoration:none;display:flex;flex-direction:column;gap:6px}
+.gift:hover{background:rgba(255,255,255,.2)}
+.gift b{font-size:1rem;line-height:1.25}
+.gift span{font-size:.85rem;opacity:.85}
+
+/* SECTIONS */
+section.block{padding:70px 0}
+.head{display:flex;flex-wrap:wrap;align-items:end;gap:14px 30px;margin-bottom:28px}
+.head h2{font-family:Fredoka;font-size:clamp(1.8rem,3.6vw,2.5rem);line-height:1.1}
+.head p{color:var(--muted);max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.chip{border:2px solid #e8dcbc;background:#fff;border-radius:999px;padding:7px 15px;font-weight:800;font-size:.88rem;cursor:pointer;color:var(--muted);font-family:Nunito}
+.chip.on{background:var(--green);border-color:var(--green);color:#fff}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:22px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 0 #efe4c8, 0 10px 26px -18px rgba(60,40,0,.35);display:flex;flex-direction:column;transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.cover{aspect-ratio:1/1;position:relative;overflow:hidden;background:var(--c,#cfe9d8)}
+.cover img{width:100%;height:100%;object-fit:cover}
+.cover.tall{aspect-ratio:3/4}
+.ph{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:16px;color:#fff;
+  background:linear-gradient(160deg,var(--c,#2f8f5b),color-mix(in srgb,var(--c,#2f8f5b) 55%,#000))}
+.ph small{font-weight:800;letter-spacing:.06em;font-size:.68rem;text-transform:uppercase;opacity:.9}
+.ph strong{font-family:Fredoka;font-size:1.25rem;line-height:1.15}
+.ph i{font-style:normal;font-size:.72rem;opacity:.75}
+.card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:1rem;line-height:1.3}
+.meta{font-size:.82rem;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:800;border-radius:12px;padding:10px 14px;font-size:.92rem;margin-top:auto}
+.btn.amz{background:var(--gold);color:#2b1d00}
+.btn.amz:hover{background:#f0b632}
+.btn.ghost{border:2px solid currentColor}
+
+/* ENSEIGNANTS */
+.teach{background:#eaf6ee}
+.teach .cols{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+@media(max-width:860px){.teach .cols{grid-template-columns:1fr}}
+.teach h2{font-family:Fredoka;font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.1;color:var(--green-d)}
+.teach ul{list-style:none;margin:22px 0;display:grid;gap:12px}
+.teach li{display:flex;gap:12px;align-items:flex-start;font-weight:600}
+.teach li::before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:800;font-size:.85rem}
+.orga{background:#fff;border-radius:24px;padding:26px;box-shadow:0 14px 40px -24px rgba(0,60,20,.5)}
+.orga .center{margin:0 auto 16px;width:150px;height:150px;border-radius:50%;background:var(--gold-l);display:grid;place-items:center;text-align:center;font-family:Fredoka;font-weight:700;color:#5b4300;padding:12px;line-height:1.15}
+.orga .subs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.orga .subs div{border-radius:14px;padding:12px 8px;text-align:center;font-weight:800;font-size:.85rem;color:#fff}
+.contact-ens{margin-top:18px;font-weight:600}.contact-ens a{color:var(--green-d);font-weight:800}.lead-form{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.lead-form input{flex:1;min-width:200px;border:2px solid #cfe6d6;border-radius:12px;padding:11px 14px;font:inherit}
+.lead-form button{border:0;background:var(--green);color:#fff;font-weight:800;border-radius:12px;padding:11px 18px;font:inherit;font-weight:800;cursor:pointer}
+.note{font-size:.8rem;color:var(--muted);margin-top:8px}
+
+/* SCIENCE */
+.sci-block{background:radial-gradient(ellipse at 70% 0%,#2a2156 0,var(--night2) 40%,var(--night) 100%);color:#e9e2d0;position:relative;overflow:hidden}
+.sci-block::before{content:"";position:absolute;inset:0;background-image:radial-gradient(1px 1px at 20% 30%,#fff8 50%,transparent 51%),radial-gradient(1px 1px at 70% 60%,#fff6 50%,transparent 51%),radial-gradient(1.5px 1.5px at 40% 80%,#d9b25f88 50%,transparent 51%),radial-gradient(1px 1px at 85% 20%,#fff7 50%,transparent 51%);background-size:340px 340px;opacity:.7;pointer-events:none}
+.sci-block .wrap{position:relative}
+.sci-block .head h2{font-family:"Cormorant Garamond";font-weight:700;font-size:clamp(2.1rem,4.4vw,3.2rem);color:var(--sgold)}
+.sci-block .head p{color:#b9b2c9}
+.tagline{font-family:"Cormorant Garamond";font-style:italic;font-size:1.35rem;color:#efe6cf;margin:-6px 0 30px}
+.sci-block .card{background:#1b1838;box-shadow:0 0 0 1px #342d5e;color:#efe6cf}
+.sci-block .card .meta{color:#a49cbc}
+.sci-block .cover{aspect-ratio:2/3;background:#120f26}
+.sci-block .ph{background:radial-gradient(circle at 50% 35%,color-mix(in srgb,var(--c) 70%,#fff) 0,var(--c) 18%,#0d0b1f 70%);color:#f3e7c4}
+.sci-block .ph strong{font-family:"Cormorant Garamond";font-size:1.45rem}
+.sci-block .btn.amz{background:var(--sgold);color:#1a1300}
+.hookq{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:36px}
+@media(max-width:860px){.hookq{grid-template-columns:1fr 1fr}}
+.hookq div{border:1px solid #3a3266;border-radius:14px;padding:16px;font-family:"Cormorant Garamond";font-size:1.2rem;line-height:1.25;color:#f1e6c8}
+.subhead{font-family:"Cormorant Garamond";font-size:1.8rem;color:var(--sgold);margin:46px 0 18px}
+
+/* QUIZ */
+.quizlist{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.quiz .box{border-radius:24px;background:linear-gradient(120deg,#fff3c9,#ffe1d6);padding:34px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+@media(max-width:760px){.quiz .box{grid-template-columns:1fr}}
+
+.qr{width:120px;height:120px;border-radius:16px;background:
+  repeating-linear-gradient(90deg,#2b2a33 0 8px,transparent 8px 16px),repeating-linear-gradient(0deg,#2b2a33 0 8px,#fff 8px 16px);opacity:.85;border:8px solid #fff}
+.quiz h2{font-family:Fredoka;font-size:1.9rem;line-height:1.15}
+
+/* FOOTER */
+footer{background:#24222c;color:#cfcbd8;padding:50px 0 30px;font-size:.92rem}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+@media(max-width:760px){footer .cols{grid-template-columns:1fr}}
+footer h4{color:#fff;margin-bottom:10px}
+footer a{display:block;text-decoration:none;color:#cfcbd8;margin:5px 0}
+footer a:hover{color:var(--gold-l)}
+.legal{border-top:1px solid #3a3742;margin-top:30px;padding-top:18px;font-size:.8rem;color:#8f8a9c}
+
+
+/* FAN OF COVERS */
+.fan{display:flex;justify-content:center;align-items:center;margin:30px auto 10px;height:260px;position:relative}
+.fan a{height:200px;width:auto;flex:none;margin:0 -22px;border-radius:12px;overflow:hidden;box-shadow:0 14px 30px -12px rgba(0,0,0,.45);transition:transform .25s;border:3px solid #fff;background:#fff}
+.fan a img{height:100%;width:auto}
+.fan a:hover{transform:translateY(-14px) rotate(0deg)!important;z-index:5}
+@media(max-width:700px){.fan{height:auto;justify-content:flex-start;overflow-x:auto;padding:10px 6px 18px;scroll-snap-type:x mandatory}.fan a{height:150px;margin:0 6px;transform:none!important;scroll-snap-align:start}}
+/* FINDER */
+.finder{background:#fff;border-radius:24px;padding:28px;box-shadow:0 2px 0 #efe4c8,0 18px 40px -28px rgba(60,40,0,.4);margin-top:34px;text-align:left}
+.finder h2{font-family:Fredoka;font-size:1.7rem}
+.finder .q{margin-top:16px}
+.finder .q b{display:block;font-size:.9rem;color:var(--muted);margin-bottom:8px}
+.finder .chip{margin:0 6px 6px 0}
+.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px;margin-top:20px}
+.res{text-decoration:none;display:flex;flex-direction:column;gap:6px;font-size:.88rem;font-weight:700}
+.res img{border-radius:10px;box-shadow:0 8px 18px -10px rgba(0,0,0,.4);aspect-ratio:auto}
+.res a{text-decoration:none;color:inherit}.res .rl{display:flex;flex-direction:column;gap:6px}.res .rd{color:var(--green-d);font-size:.84rem}.res .ra{color:var(--green-d)}.res a:hover{text-decoration:underline}
+.empty{color:var(--muted);margin-top:16px}
+/* NOEL GUIDE */
+.budgets{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:860px){.budgets{grid-template-columns:1fr}}
+.budget{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);border-radius:18px;padding:16px}
+.budget h3{font-family:Fredoka;font-size:1.15rem;margin-bottom:10px}
+.budget .mini{display:flex;gap:10px;flex-wrap:wrap}
+.budget .mini a{width:76px;text-decoration:none;font-size:.72rem;line-height:1.2;color:#fff}
+.budget .mini img{border-radius:8px;margin-bottom:4px;box-shadow:0 6px 14px -8px rgba(0,0,0,.5)}
+/* COUPS DE COEUR */
+.coeur{padding:56px 0 10px}
+.coeur .row{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+@media(max-width:860px){.coeur .row{grid-template-columns:repeat(2,1fr)}}
+.coeur .item{text-decoration:none;background:#fff;border-radius:18px;padding:14px;box-shadow:0 2px 0 #efe4c8,0 10px 26px -18px rgba(60,40,0,.35);display:flex;flex-direction:column;gap:8px}
+.coeur .item img{border-radius:10px}
+.coeur .item b{font-size:.98rem;line-height:1.25}
+.coeur .item small{color:var(--muted)}
+.tag{align-self:flex-start;background:#fde6b0;color:#7a5200;font-weight:800;font-size:.72rem;border-radius:999px;padding:3px 10px}
+
+.avis{padding:50px 0 10px}
+.avis .row{columns:3 300px;column-gap:20px}
+.avis blockquote{break-inside:avoid;margin-bottom:20px}
+.avis blockquote{background:#fff;border-radius:18px;padding:22px;box-shadow:0 2px 0 #efe4c8,0 10px 26px -18px rgba(60,40,0,.35);display:flex;flex-direction:column;gap:10px}
+.avis .stars{color:#f08a24;letter-spacing:2px;font-size:1.1rem}
+.avis q{font-size:1.02rem;line-height:1.5;quotes:"« " " »"}
+.avis cite{font-style:normal;font-size:.82rem;color:var(--muted)}
+.avis blockquote[hidden]{display:none}
+.avis cite a{color:var(--green-d);font-weight:800}
+/* proto banner */
+.proto{background:#2b2a33;color:#f6d77a;text-align:center;font-size:.82rem;font-weight:700;padding:7px 10px}
+
+/* ===== IDENTITÉ « LE COIN DES CURIEUX » (bandeau Facebook) ===== */
+:root{--cream:#fffdf8;--ink:#1f1f22;--muted:#5f5d66;--green:#b07f05;--green-d:#8a6303;--gold:#e5a913;--gold-l:#f7dd8f}
+body{background:var(--cream)}
+nav{background:rgba(255,253,248,.94);border-bottom:1px solid #f1e6c8}
+.logo{font-family:Andika,Fredoka,sans-serif}
+.logo img{height:38px;width:auto}
+nav .links a:hover{color:var(--green-d)}
+.hero{padding:46px 0 30px}
+.hero .wrap{position:relative}
+.hero .deco{position:absolute;right:-30px;top:-10px;width:380px;opacity:.55;pointer-events:none}
+.hero .mark{position:absolute;left:10px;top:0;width:110px;opacity:.85;pointer-events:none}
+@media(max-width:900px){.hero .deco{width:220px;right:-40px;opacity:.3}.hero .mark{width:64px;left:-6px;opacity:.5}}
+.brand{font-family:Andika,Fredoka,sans-serif;font-weight:700;font-size:clamp(2.4rem,6vw,4.2rem);line-height:1;color:var(--ink);position:relative}
+.spark{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:16px auto 14px;font-size:1.3rem}
+.spark span{display:block;width:90px;height:2px;background:var(--gold);border-radius:2px}
+.hero h1{font-family:Nunito,sans-serif;font-weight:600;font-size:clamp(1.4rem,3vw,2rem);color:var(--ink)}
+.hero h1 em{color:var(--gold)}
+.hero p.lead{font-size:1.05rem;max-width:680px}
+.cats{margin-top:18px;font-weight:800;letter-spacing:.28em;font-size:.82rem;color:var(--ink);text-transform:uppercase}
+.cats i{font-style:normal;color:var(--gold);margin:0 .6em}
+h2,.head h2,.finder h2,.teach h2,.quiz h2,.coeur .head h2{font-family:Andika,Fredoka,sans-serif}
+.chip{border-color:#efe2bd}
+.chip.on{background:var(--gold);border-color:var(--gold);color:#1f1f22}
+.door.kids{background:linear-gradient(135deg,#fff6dc,#fffdf8);border:2px solid #f2d57e}
+.door.kids h2{font-family:Andika,Fredoka,sans-serif;color:var(--ink)}
+.teach{background:#fff6dd}
+.teach h2{color:var(--ink)}
+.teach li::before{background:var(--gold);color:#1f1f22}
+.lead-form button{background:var(--ink)}
+.noel{background:radial-gradient(ellipse at 85% 0%,#2b3a6b 0,#15203f 55%,#0f1730 100%);color:#fff;border:1px solid #2a3762}
+.noel h2{font-family:Andika,Fredoka,sans-serif;color:var(--gold)}
+.budget{background:rgba(255,255,255,.06);border-color:rgba(229,169,19,.35)}
+.budget h3{color:var(--gold-l)}
+.quiz .box{background:linear-gradient(120deg,#fff6dc,#fffdf8);border:2px solid #f2d57e}
+.tag{background:#fdeebd;color:#6b4c00}
+.avis .stars{color:var(--gold)}
+footer h4{color:var(--gold-l)}
+.door.kids{position:relative;padding-right:150px}
+.door .medal{position:absolute;right:18px;top:50%;transform:translateY(-50%);width:120px;filter:drop-shadow(0 8px 14px rgba(0,0,0,.2));background:none}
+@media(max-width:500px){.door.kids{padding-right:30px;padding-top:120px}.door .medal{top:16px;right:auto;left:26px;transform:none;width:96px}}
+.medal-s{width:70px;margin-right:-4px}
+#lily-et-teo .head{align-items:center}
+.autrice .intro{text-align:center;max-width:720px;margin:0 auto 34px}
+.autrice .intro img{height:70px;margin:0 auto 10px}
+.autrice .intro p{color:var(--muted);font-size:1.08rem;margin-top:10px}
+.plumes{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:800px){.plumes{grid-template-columns:1fr}}
+.plume{border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.plume img{height:96px;width:auto;align-self:flex-start}
+.plume h3{font-family:Andika,Fredoka,sans-serif;font-size:1.6rem}
+.plume .role{font-weight:800;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;color:var(--green-d)}
+.plume .btn{align-self:flex-start;margin-top:8px}
+.plume.kids{background:linear-gradient(135deg,#fff6dc,#fffdf8);border:2px solid #f2d57e}
+.plume.sci{background:radial-gradient(circle at 85% 10%,#3a2f6b 0,#17142f 50%,#0d0b1f 100%);color:#efe6cf}
+.plume.sci h3{color:var(--sgold);font-family:"Cormorant Garamond",serif;font-size:1.9rem}
+.plume.sci .role{color:#d9b25f}
+.plume.sci .btn.amz{background:var(--sgold);color:#1a1300}
+.anecdote{font-style:italic;color:var(--green-d);font-weight:700}
+.sign{font-family:Andika,Fredoka,sans-serif;color:var(--gold)!important;font-size:1.5rem!important;font-weight:700;margin-top:6px!important}
+.yt{display:inline-block;margin-top:8px;font-weight:800;color:#c4302b;text-decoration:none}
+.yt:hover{text-decoration:underline}
+.orga-feat{cursor:zoom-in}
+.orga-feat img{border-radius:18px;box-shadow:0 18px 40px -22px rgba(0,0,0,.5)}
+.orga-feat p{font-size:.85rem;color:var(--muted);margin-top:8px;text-align:center}
+.gal-title{font-family:Andika,Fredoka,sans-serif;font-size:1.5rem;margin:46px 0 14px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+.og{background:#fff;border-radius:18px;padding:12px;box-shadow:0 2px 0 #efe4c8,0 10px 26px -18px rgba(60,40,0,.35);display:flex;flex-direction:column;gap:8px}
+.og .thumb{cursor:zoom-in;border-radius:10px;overflow:hidden}
+.og .meta2{display:flex;gap:10px;align-items:center}
+.og .meta2 img{width:46px;border-radius:6px}
+.og b{font-size:.95rem;line-height:1.25}
+.og small{color:var(--muted);font-weight:700}
+.og .btn{margin-top:4px}
+.acts{background:#fbf6ea}
+.actrow{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px}
+.act{flex:0 0 min(520px,86vw);scroll-snap-align:start;background:#fff;border-radius:18px;box-shadow:0 6px 22px rgba(60,40,0,.08);overflow:hidden;display:flex;flex-direction:column}
+.act .thumb{cursor:zoom-in;background:#faf6ec}
+.act .thumb img{width:100%;display:block}
+.act .txt{padding:14px 18px 18px;display:flex;flex-direction:column;gap:8px}
+.act .txt b{font-size:1.05rem}
+.act .txt small{color:var(--muted)}
+.card h3 a.tl{color:inherit;text-decoration:none}.card h3 a.tl:hover{text-decoration:underline}.more-l{font-size:.86rem;font-weight:700;color:var(--green-d);text-decoration:none;margin:-2px 0 10px}.more-l:hover{text-decoration:underline}
+.faq .fqs{display:flex;flex-direction:column;gap:10px;max-width:860px}
+.fq{background:#fff;border-radius:14px;box-shadow:0 2px 0 #efe4c8;padding:0 18px}
+.fq summary{cursor:pointer;font-weight:800;padding:15px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary::after{content:"+";color:var(--gold);font-size:1.4rem;line-height:1}
+.fq[open] summary::after{content:"–"}
+.fq p{margin:0 0 16px;color:var(--muted);line-height:1.6}
+.lb{position:fixed;inset:0;background:rgba(15,15,20,.88);z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;gap:10px}
+.lb[hidden]{display:none}
+.lb img{max-width:min(900px,96vw);max-height:84vh;border-radius:10px}
+.lb p{color:#f7dd8f;font-weight:700}
+.lb button{position:absolute;top:14px;right:20px;font-size:2.4rem;background:none;border:0;color:#fff;cursor:pointer}
+.voix{font-family:'Caveat',cursive;font-size:1.55rem;line-height:1.3;color:#3a2f1a;margin:14px 0 12px;padding:4px 0 4px 16px;border-left:3px solid var(--gold,#c9a24a);transform:rotate(-.6deg)}
+.plume.sci .voix{transform:rotate(.5deg);color:#f3e4b9}
+</style>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quel livre choisir pour un enfant de maternelle (3-6 ans) ?", "acceptedAnswer": {"@type": "Answer", "text": "Pour les 3-6 ans (cycle 1), la collection Lily et Téo propose « Lily et Téo dans la Forêt des Murmures » (le vivant et le non-vivant, le papillon, la graine), « La Grande Légende des Animaux » (la classification des animaux) et « Les parties du corps et les 5 sens ». « Contes de la forêt » réunit 33 petites histoires pour les 3-7 ans, chacune autour d'une valeur à transmettre (honnêteté, respect des autres et des lieux publics, prudence…) ou d'une émotion à apprivoiser (peur du noir, déménagement, nouvelle école…) : idéales au moment du coucher, mais aussi en classe ou à la maison."}}, {"@type": "Question", "name": "Quels livres pour un enfant de 6 à 8 ans (CP, CE1, CE2) ?", "acceptedAnswer": {"@type": "Answer", "text": "Pour les 6-8 ans (cycle 2) : « Le cycle de l'eau », « Lily et Téo font le tour du monde » (les plus beaux monuments), « Les métiers », « Lily et Téo contre le harcèlement » et « Lily et Téo sauvent Noël ». Dès 8 ans, l'enfant peut aussi lire la gravité, la préhistoire, Rome ou le climat."}}, {"@type": "Question", "name": "Quels livres pour un enfant de 9 à 11 ans (CM1, CM2, 6e) ?", "acceptedAnswer": {"@type": "Answer", "text": "Pour les 9-11 ans (cycle 3) : « Les mystères de la gravité », « Lily et Téo remontent le temps : les hommes préhistoriques », « L'Histoire de Rome et les Romains », « Mission climat » et « Lily et Téo font le tour du monde ». « 20 histoires vraies pour enfants » raconte de vraies aventures pour les 7-12 ans."}}, {"@type": "Question", "name": "Les livres Lily et Téo peuvent-ils être utilisés en classe ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, ils ont été conçus pour ça. Presque tous les albums sont accompagnés d'un organigramme pluridisciplinaire pour construire une séquence complète à partir de l'histoire : français, sciences, histoire, mathématiques, arts. Les livres contiennent aussi des activités à photocopier (cartes, frises, jeux) et certains renvoient à un quiz interactif. « Lily et Téo contre le harcèlement », sans organigramme, est lui aussi pensé pour la classe : c'est un support idéal pour éduquer les élèves contre le harcèlement scolaire."}}, {"@type": "Question", "name": "Que contiennent les livres Lily et Téo en plus de l'histoire ?", "acceptedAnswer": {"@type": "Answer", "text": "Chaque album prolonge l'aventure par des activités à faire en famille ou en classe : cartes à jouer pour un mémory ou un jeu des familles, images à découper et à classer, recette de cuisine, carte du monde et devinettes, pantin à construire… Certains livres proposent un QR code vers un quiz interactif."}}, {"@type": "Question", "name": "Quel livre pour lutter contre le harcèlement scolaire ?", "acceptedAnswer": {"@type": "Answer", "text": "« Lily et Téo contre le harcèlement » a été écrit pour éduquer les enfants de 6 à 11 ans contre le harcèlement scolaire : reconnaître les situations, en parler, savoir comment agir. Il est particulièrement adapté à un travail en classe. Pour les plus petits, les « Contes de la forêt » font découvrir 33 valeurs, comme le respect des autres et l'honnêteté, à travers 33 petites histoires."}}, {"@type": "Question", "name": "Existe-t-il des livres de vulgarisation scientifique pour ados et adultes ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, sous le nom de Christèle Gierden, la collection « Les grandes questions à la portée de tous » explique l'Univers, les trous noirs, la physique quantique et le cerveau, sans équation et sans jargon. Pour les amateurs de mystère, les « Nouvelles mystérieuses » (tomes 1 et 2) explorent la frontière entre science et inexpliqué."}}, {"@type": "Question", "name": "Quelle idée de cadeau de Noël pour un enfant curieux ?", "acceptedAnswer": {"@type": "Answer", "text": "« Lily et Téo sauvent Noël » (3-9 ans) avec sa recette de biscuits et ses activités de découpage, le cahier de coloriage « Les animaux du monde » (dès 4 ans) pour un petit budget, ou les « Contes de la forêt » en grand format pour un beau cadeau."}}, {"@type": "Question", "name": "Où acheter les livres de Maîtresse Christèle et de Christèle Gierden ?", "acceptedAnswer": {"@type": "Answer", "text": "Tous les livres sont disponibles sur Amazon. Chaque bouton « Voir sur Amazon » de ce site mène directement à la bonne fiche."}}, {"@type": "Question", "name": "Qui est l'autrice des livres ?", "acceptedAnswer": {"@type": "Answer", "text": "Derrière Le coin des curieux, il y a une seule autrice. Elle signe Maîtresse Christèle pour les enfants (la collection Lily et Téo) et Christèle Gierden pour les ados et les adultes (Les grandes questions à la portée de tous, Nouvelles mystérieuses). Enseignante durant plus de vingt ans, elle écrit des livres qui transmettent de vraies connaissances, en lien avec les programmes scolaires."}}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Livres du Coin des curieux", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Book", "name": "La Forêt des Murmures", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0D8BVZ36F", "typicalAgeRange": "3-6"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Book", "name": "La classification des animaux", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0FX6BSLJP", "typicalAgeRange": "3-6"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Book", "name": "Le corps et les 5 sens", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0DMT1QX3R", "typicalAgeRange": "3-6"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Book", "name": "Le cycle de l'eau", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0DF5TTQTD", "typicalAgeRange": "7-10"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Book", "name": "La gravité", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0FX6Q8M94", "typicalAgeRange": "8-11"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Book", "name": "Mission climat", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0DWLNX1PJ", "typicalAgeRange": "8-11"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Book", "name": "La préhistoire", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0DCSX6PPF", "typicalAgeRange": "8-11"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Book", "name": "Rome et les Romains", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0DKJNB688", "typicalAgeRange": "8-11"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Book", "name": "Le tour du monde", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0DV3SR37H", "typicalAgeRange": "6-11"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Book", "name": "Les métiers", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0D9C14T4W", "typicalAgeRange": "6-11"}}, {"@type": "ListItem", "position": 11, "item": {"@type": "Book", "name": "Contre le harcèlement", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0F4MWLZY4", "typicalAgeRange": "6-11"}}, {"@type": "ListItem", "position": 12, "item": {"@type": "Book", "name": "Lily et Téo sauvent Noël", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0DLBVXS27", "typicalAgeRange": "4-7"}}, {"@type": "ListItem", "position": 13, "item": {"@type": "Book", "name": "Coloriage animaux du monde", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0G6Z4HQQ7", "typicalAgeRange": "4-8"}}, {"@type": "ListItem", "position": 14, "item": {"@type": "Book", "name": "Contes de la forêt", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0DJ3R165T", "typicalAgeRange": "3-7"}}, {"@type": "ListItem", "position": 15, "item": {"@type": "Book", "name": "20 histoires vraies", "author": {"@type": "Person", "name": "Maîtresse Christèle"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0DS8L5WXB", "typicalAgeRange": "8-12"}}, {"@type": "ListItem", "position": 16, "item": {"@type": "Book", "name": "L'Univers à la portée de tous", "author": {"@type": "Person", "name": "Christèle Gierden"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0FHL1MT2D", "typicalAgeRange": "13-"}}, {"@type": "ListItem", "position": 17, "item": {"@type": "Book", "name": "Les trous noirs à la portée de tous", "author": {"@type": "Person", "name": "Christèle Gierden"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0GZF3FF1W", "typicalAgeRange": "13-"}}, {"@type": "ListItem", "position": 18, "item": {"@type": "Book", "name": "La physique quantique à la portée de tous", "author": {"@type": "Person", "name": "Christèle Gierden"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0GNN53Q3K", "typicalAgeRange": "13-"}}, {"@type": "ListItem", "position": 19, "item": {"@type": "Book", "name": "Le cerveau à la portée de tous", "author": {"@type": "Person", "name": "Christèle Gierden"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0GVYJKSJF", "typicalAgeRange": "13-"}}, {"@type": "ListItem", "position": 20, "item": {"@type": "Book", "name": "Nouvelles mystérieuses — Tome 1", "author": {"@type": "Person", "name": "Christèle Gierden"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0FVLH7M4H", "typicalAgeRange": "15-"}}, {"@type": "ListItem", "position": 21, "item": {"@type": "Book", "name": "Nouvelles mystérieuses — Tome 2", "author": {"@type": "Person", "name": "Christèle Gierden"}, "inLanguage": "fr", "url": "https://www.amazon.fr/dp/B0FVLSBX71", "typicalAgeRange": "15-"}}]}, {"@context": "https://schema.org", "@type": "WebSite", "name": "Le coin des curieux", "inLanguage": "fr", "sameAs": ["https://www.facebook.com/lecoindescurieux", "https://www.instagram.com/coindescurieux.officiel", "https://www.youtube.com/@lecoindescurieux.officiel", "https://www.amazon.fr/stores/author/B0GZL1WYBG", "https://www.amazon.fr/stores/author/B0GZL2NRPW"]}]</script>
+<link rel="canonical" href="https://lecoindescurieux.eu/">
+<meta property="og:url" content="https://lecoindescurieux.eu/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Le coin des curieux">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://lecoindescurieux.eu/#site", "url": "https://lecoindescurieux.eu/", "name": "Le coin des curieux", "inLanguage": "fr-FR", "description": "Livres pour enfants de la collection Lily et Téo (Maîtresse Christèle) et livres de vulgarisation scientifique Les grandes questions à la portée de tous (Christèle Gierden).", "publisher": {"@id": "https://lecoindescurieux.eu/#autrice"}}, {"@type": "Person", "@id": "https://lecoindescurieux.eu/#autrice", "name": "Christèle Gierden", "alternateName": ["Maîtresse Christèle"], "description": "Autrice de la collection éducative Lily et Téo pour les enfants et de la série de vulgarisation scientifique Les grandes questions à la portée de tous.", "url": "https://lecoindescurieux.eu/", "sameAs": ["https://www.amazon.fr/stores/author/B0GZL1WYBG", "https://www.amazon.fr/stores/author/B0GZL2NRPW", "https://www.youtube.com/@lecoindescurieux.officiel", "https://www.facebook.com/lecoindescurieux", "https://www.instagram.com/coindescurieux.officiel"]}]}</script>
+</head>
+<body>
+
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="logo.png" alt="" width="26" height="38" decoding="async">Le coin des curieux</a>
+    <div class="links">
+      <a href="#trouver">Trouver un livre</a>
+      <a href="#noel">Idées cadeaux</a>
+      <a href="#lily-et-teo">Lily et Téo</a>
+      <a href="#enseignants">Enseignants</a>
+      <a href="#grandes-questions">Les grandes questions</a>
+      <a href="#autrice">L'autrice</a>
+      <a href="#quiz">Quiz</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <img class="deco" src="deco.webp" alt="" aria-hidden="true" decoding="async">
+    <img class="mark" src="logo.png" alt="" aria-hidden="true" decoding="async">
+    <p class="brand">Le coin des curieux</p>
+    <div class="spark"><span></span>✦<span></span></div>
+    <h1>Parce que la <em>curiosité</em> n'a pas d'âge.</h1>
+    <p class="lead">Des livres pour comprendre le monde, de 3 à 99 ans : des histoires qui apprennent aux enfants en les faisant rêver, et des livres qui rendent la science claire pour les grands curieux.</p>
+    <p class="cats">Livres <i>✦</i> Sciences <i>✦</i> Découvertes <i>✦</i> Histoires</p>
+    <div class="fan" id="fan"><a href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener" style="transform:translateY(30px) rotate(-15deg);z-index:7" aria-label="La Forêt des Murmures"><img src="covers/B0D8BVZ36F.jpg" alt="La Forêt des Murmures" decoding="async"></a><a href="https://www.amazon.fr/dp/B0FX6Q8M94" target="_blank" rel="noopener" style="transform:translateY(20px) rotate(-10deg);z-index:8" aria-label="La gravité"><img src="covers/B0FX6Q8M94.jpg" alt="La gravité" decoding="async"></a><a href="https://www.amazon.fr/dp/B0DLBVXS27" target="_blank" rel="noopener" style="transform:translateY(10px) rotate(-5deg);z-index:9" aria-label="Lily et Téo sauvent Noël"><img src="covers/B0DLBVXS27.jpg" alt="Lily et Téo sauvent Noël" decoding="async"></a><a href="https://www.amazon.fr/dp/B0DCSX6PPF" target="_blank" rel="noopener" style="transform:translateY(0px) rotate(0deg);z-index:10" aria-label="La préhistoire"><img src="covers/B0DCSX6PPF.jpg" alt="La préhistoire" decoding="async"></a><a href="https://www.amazon.fr/dp/B0GNN53Q3K" target="_blank" rel="noopener" style="transform:translateY(10px) rotate(5deg);z-index:9" aria-label="La physique quantique à la portée de tous"><img src="covers/B0GNN53Q3K.jpg" alt="La physique quantique à la portée de tous" decoding="async"></a><a href="https://www.amazon.fr/dp/B0FHL1MT2D" target="_blank" rel="noopener" style="transform:translateY(20px) rotate(10deg);z-index:8" aria-label="L'Univers à la portée de tous"><img src="covers/B0FHL1MT2D.jpg" alt="L'Univers à la portée de tous" decoding="async"></a><a href="https://www.amazon.fr/dp/B0GZF3FF1W" target="_blank" rel="noopener" style="transform:translateY(30px) rotate(15deg);z-index:7" aria-label="Les trous noirs à la portée de tous"><img src="covers/B0GZF3FF1W.jpg" alt="Les trous noirs à la portée de tous" decoding="async"></a></div><!--/fan-->
+
+    <div class="doors">
+      <a class="door kids" href="#lily-et-teo">
+        <img class="medal" src="medaillon.webp" alt="Lily et Téo, Le coin des curieux" loading="lazy" decoding="async">
+        <span class="tag">Maîtresse Christèle · 3–12 ans</span>
+        <h2>Lily et Téo, apprendre en s'amusant</h2>
+        <p>Des aventures illustrées sur le vivant, les sciences, l'histoire et le vivre-ensemble, liées aux programmes de l'école.</p>
+        <span class="go">Découvrir la collection →</span>
+      </a>
+      <a class="door sci" href="#grandes-questions">
+        <span class="tag">Christèle Gierden · dès 13 ans</span>
+        <h2>Les grandes questions à la portée de tous</h2>
+        <p>L'Univers, les trous noirs, la physique quantique, le cerveau… expliqués simplement.</p>
+        <span class="go">Explorer la collection →</span>
+      </a>
+    </div>
+
+      </div>
+</header>
+
+<section class="wrap" id="trouver">
+  <div class="finder">
+    <h2>Trouver le bon livre en 10 secondes</h2>
+    <div class="q"><b>C'est pour…</b><div id="f-who"><button class="chip on" data-k="who" data-v="enfant">Mon enfant</button><button class="chip " data-k="who" data-v="classe">Ma classe</button><button class="chip " data-k="who" data-v="moi">Moi / un ado</button></div><!--/f-who--></div>
+    <div class="q"><b>Quel âge ?</b><div id="f-age"><button class="chip " data-k="age" data-v="3-5">3-5 ans</button><button class="chip on" data-k="age" data-v="6-8">6-8 ans</button><button class="chip " data-k="age" data-v="9-12">9-12 ans</button><button class="chip " data-k="age" data-v="13+">Ado / adulte</button></div><!--/f-age--></div>
+    <div class="q"><b>Quel sujet ?</b><div id="f-sub"><button class="chip on" data-k="sub" data-v="tous">Tout</button><button class="chip " data-k="sub" data-v="sciences">Sciences</button><button class="chip " data-k="sub" data-v="histoire">Histoire &amp; monde</button><button class="chip " data-k="sub" data-v="emotions">Émotions &amp; vivre ensemble</button><button class="chip " data-k="sub" data-v="contes">Histoires &amp; contes</button><button class="chip " data-k="sub" data-v="activites">Activités</button></div><!--/f-sub--></div>
+    <div class="results" id="f-res"><div class="res"><a class="rl" href="livres/foret-des-murmures.html"><img src="covers/B0D8BVZ36F.jpg" alt="La Forêt des Murmures" loading="lazy" decoding="async">La Forêt des Murmures</a><a class="rd" href="livres/foret-des-murmures.html">Découvrir le livre →</a><a class="ra" href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener">Voir sur Amazon →</a></div><div class="res"><a class="rl" href="livres/classification-des-animaux.html"><img src="covers/B0FX6BSLJP.jpg" alt="La classification des animaux" loading="lazy" decoding="async">La classification des animaux</a><a class="rd" href="livres/classification-des-animaux.html">Découvrir le livre →</a><a class="ra" href="https://www.amazon.fr/dp/B0FX6BSLJP" target="_blank" rel="noopener">Voir sur Amazon →</a></div><div class="res"><a class="rl" href="livres/corps-et-5-sens.html"><img src="covers/B0DMT1QX3R.jpg" alt="Le corps et les 5 sens" loading="lazy" decoding="async">Le corps et les 5 sens</a><a class="rd" href="livres/corps-et-5-sens.html">Découvrir le livre →</a><a class="ra" href="https://www.amazon.fr/dp/B0DMT1QX3R" target="_blank" rel="noopener">Voir sur Amazon →</a></div><div class="res"><a class="rl" href="livres/cycle-de-l-eau.html"><img src="covers/B0DF5TTQTD.jpg" alt="Le cycle de l'eau" loading="lazy" decoding="async">Le cycle de l'eau</a><a class="rd" href="livres/cycle-de-l-eau.html">Découvrir le livre →</a><a class="ra" href="https://www.amazon.fr/dp/B0DF5TTQTD" target="_blank" rel="noopener">Voir sur Amazon →</a></div><div class="res"><a class="rl" href="livres/gravite.html"><img src="covers/B0FX6Q8M94.jpg" alt="La gravité" loading="lazy" decoding="async">La gravité</a><a class="rd" href="livres/gravite.html">Découvrir le livre →</a><a class="ra" href="https://www.amazon.fr/dp/B0FX6Q8M94" target="_blank" rel="noopener">Voir sur Amazon →</a></div><div class="res"><a class="rl" href="livres/mission-climat.html"><img src="covers/B0DWLNX1PJ.jpg" alt="Mission climat" loading="lazy" decoding="async">Mission climat</a><a class="rd" href="livres/mission-climat.html">Découvrir le livre →</a><a class="ra" href="https://www.amazon.fr/dp/B0DWLNX1PJ" target="_blank" rel="noopener">Voir sur Amazon →</a></div></div><!--/f-res-->
+  </div>
+</section>
+
+<section class="wrap" id="noel">
+  <div class="noel">
+    <div>
+      <h2>Idées cadeaux de Noël</h2>
+      <p>Un livre qui fait grandir, à glisser sous le sapin. À chaque budget son cadeau.</p>
+    </div>
+    <div class="budgets" id="budgets"><div class="budget"><h3>Moins de 12 €</h3><div class="mini"><a href="livres/coloriage-animaux-du-monde.html"><img src="covers/B0G6Z4HQQ7.jpg" alt="Coloriage animaux du monde" loading="lazy" decoding="async">Coloriage animaux du monde</a></div></div><div class="budget"><h3>Moins de 15 €</h3><div class="mini"><a href="livres/lily-et-teo-sauvent-noel.html"><img src="covers/B0DLBVXS27.jpg" alt="Lily et Téo sauvent Noël" loading="lazy" decoding="async">Lily et Téo sauvent Noël</a><a href="livres/foret-des-murmures.html"><img src="covers/B0D8BVZ36F.jpg" alt="La Forêt des Murmures" loading="lazy" decoding="async">La Forêt des Murmures</a><a href="livres/univers-a-la-portee-de-tous.html"><img src="covers/B0FHL1MT2D.jpg" alt="L'Univers à la portée de tous" loading="lazy" decoding="async">L'Univers à la portée de tous</a></div></div><div class="budget"><h3>Un beau cadeau</h3><div class="mini"><a href="livres/contes-de-la-foret.html"><img src="covers/B0DJ3R165T.jpg" alt="Contes de la forêt" loading="lazy" decoding="async">Contes de la forêt</a><a href="livres/20-histoires-vraies.html"><img src="covers/B0DS8L5WXB.jpg" alt="20 histoires vraies" loading="lazy" decoding="async">20 histoires vraies</a></div></div></div><!--/budgets-->
+  </div>
+</section>
+
+<section class="coeur">
+  <div class="wrap">
+    <div class="head"><h2>Nos coups de cœur</h2><p>Nos livres les plus riches, à offrir… ou à s'offrir.</p></div>
+    <div class="row" id="coeur"><a class="item" href="livres/20-histoires-vraies.html"><img src="covers/B0DS8L5WXB.jpg" alt="20 histoires vraies" loading="lazy" decoding="async"><span class="tag">Dès 8 ans</span><b>20 histoires vraies</b><small>20 héros réels, d'Einstein à Malala</small></a><a class="item" href="livres/nouvelles-mysterieuses-tome-1.html"><img src="covers/B0FVLH7M4H.jpg" alt="Nouvelles mystérieuses — Tome 1" loading="lazy" decoding="async"><span class="tag">Ados &amp; adultes</span><b>Nouvelles mystérieuses — Tome 1</b><small>8 nouvelles aux frontières de la science</small></a><a class="item" href="livres/physique-quantique-a-la-portee-de-tous.html"><img src="covers/B0GNN53Q3K.jpg" alt="La physique quantique à la portée de tous" loading="lazy" decoding="async"><span class="tag">Dès 13 ans</span><b>La physique quantique à la portée de tous</b><small>La quantique sans une seule équation</small></a><a class="item" href="livres/nouvelles-mysterieuses-tome-2.html"><img src="covers/B0FVLSBX71.jpg" alt="Nouvelles mystérieuses — Tome 2" loading="lazy" decoding="async"><span class="tag">Ados &amp; adultes</span><b>Nouvelles mystérieuses — Tome 2</b><small>La suite des mystères</small></a></div><!--/coeur-->
+  </div>
+</section>
+
+
+<section class="avis">
+  <div class="wrap">
+    <div class="head"><h2>Ils en parlent</h2><p>De vrais avis de lecteurs, laissés sur Amazon.</p></div>
+    <div class="row" id="avis"><blockquote><span class="stars">★★★★★</span><b>Très bien fait</b><q>Génial ! Mon fils de 15 ans a adoré et compris plein de choses, moi aussi d'ailleurs !</q><cite>Avis Amazon, juillet 2025 — sur <a href="https://www.amazon.fr/dp/B0FHL1MT2D" target="_blank" rel="noopener">L'Univers à la portée de tous</a></cite></blockquote><blockquote><span class="stars">★★★★★</span><b>Super</b><q>Merci pour ce joli petit livre qui explique si bien des notions que nous avons du mal à expliquer à nos enfants. Je recommande fortement toute la série de livres.</q><cite>Avis Amazon, septembre 2024 — sur <a href="https://www.amazon.fr/dp/B0DF5TTQTD" target="_blank" rel="noopener">Le cycle de l'eau</a></cite></blockquote><blockquote><span class="stars">★★★★★</span><b>Les trous noirs de 7 à 77 ans</b><q>L'auteure réussit le tour de force de mettre à la portée du plus grand nombre un sujet aussi complexe que les trous noirs sans omettre pour autant les dernières hypothèses […] Chaudement recommandé.</q><cite>Avis Amazon, août 2026 — sur <a href="https://www.amazon.fr/dp/B0GZF3FF1W" target="_blank" rel="noopener">Les trous noirs à la portée de tous</a></cite></blockquote><blockquote><span class="stars">★★★★★</span><b>Je recommande !</b><q>Très belle histoire que mes enfants ont beaucoup aimé, à acheter !</q><cite>Avis Amazon, octobre 2025 — sur <a href="https://www.amazon.fr/dp/B0DLBVXS27" target="_blank" rel="noopener">Lily et Téo sauvent Noël</a></cite></blockquote><blockquote><span class="stars">★★★★★</span><b>Livre magnifique</b><q>Les illustrations sont magnifiques. Il y a une continuité avec les personnages (Zoé la lapine, Max l'écureuil, Léon le lion, etc.). Très bon livre.</q><cite>Avis Amazon, décembre 2025 — sur <a href="https://www.amazon.fr/dp/B0DJ3R165T" target="_blank" rel="noopener">Contes de la forêt</a></cite></blockquote><blockquote><span class="stars">★★★★★</span><b>Intéressant</b><q>Mon fils a bien aimé et a appris plein de choses, il m'en parle encore.</q><cite>Avis Amazon, juillet 2025 — sur <a href="https://www.amazon.fr/dp/B0DS8L5WXB" target="_blank" rel="noopener">20 histoires vraies</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Super</b><q>Mon fils a adoré, c'est bien expliqué, mignon et complet. Les images pour faire la frise chronologique à la fin sont très bien.</q><cite>Avis Amazon, août 2024 — sur <a href="https://www.amazon.fr/dp/B0DCSX6PPF" target="_blank" rel="noopener">La préhistoire</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Je recommande !</b><q>Mes enfants et moi sommes devenus accro à Lily et Téo, ils adorent les personnages et j'aime le fait que ces histoires soient éducatives, à acheter de toute urgence !</q><cite>Avis Amazon, octobre 2025 — sur <a href="https://www.amazon.fr/dp/B0FX6BSLJP" target="_blank" rel="noopener">La classification des animaux</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Merci Maîtresse Christèle</b><q>Super petit livre bien illustré qui a régalé les enfants. Habituellement les enfants ne sont pas férus de lecture mais avec toute la série de Maîtresse Christèle ils se régalent.</q><cite>Avis Amazon, septembre 2024 — sur <a href="https://www.amazon.fr/dp/B0D9C14T4W" target="_blank" rel="noopener">Les métiers</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Drôle et mignon</b><q>Super pour les parties du corps et les sens, impeccable pour la maternelle.</q><cite>Avis Amazon, juillet 2025 — sur <a href="https://www.amazon.fr/dp/B0DMT1QX3R" target="_blank" rel="noopener">Le corps et les 5 sens</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Je recommande !</b><q>Encore un livre que mes enfants ont adoré, je ne suis jamais déçue avec Lily et Téo !</q><cite>Avis Amazon, octobre 2025 — sur <a href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener">La Forêt des Murmures</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Très détaillé</b><q>On est plongé dans l'histoire des Romains, c'est complet et bien détaillé. Une jolie aventure en même temps qu'une leçon d'Histoire vivante.</q><cite>Avis Amazon, novembre 2024 — sur <a href="https://www.amazon.fr/dp/B0DKJNB688" target="_blank" rel="noopener">Rome et les Romains</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Il est tout mignon, les illustrations sont très jolies</b><q>Bonne idée de reprendre les cours de l'école maternelle. Ma fille était contente, c'est bien expliqué et cette fois-ci aussi j'ai fait avec elle les activités des fins de chapitre. C'est simple et efficace.</q><cite>Avis Amazon, juin 2024 — sur <a href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener">La Forêt des Murmures</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Bon choix</b><q>Très sympa, approche simple d'un thème pas forcément évident pour mon fils qui a bien accroché avec cette histoire. Jolies illustrations.</q><cite>Avis Amazon, juin 2024 — sur <a href="https://www.amazon.fr/dp/B0FX6Q8M94" target="_blank" rel="noopener">La gravité</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Mignon et instructif</b><q>Mon fils a beaucoup aimé. Il a presque toute la série des Lily et Téo.</q><cite>Avis Amazon, juillet 2025 — sur <a href="https://www.amazon.fr/dp/B0DV3SR37H" target="_blank" rel="noopener">Le tour du monde</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Super format</b><q>L'histoire est très mignonne, les illustrations sont jolies et le format est très bien pour un album pour enfants. Je n'ai pas encore essayé les activités proposées à la fin du livre mais j'ai photocopié les cartes et on fait des jeux de mémoire.</q><cite>Avis Amazon, juillet 2024 — sur <a href="https://www.amazon.fr/dp/B0FX6BSLJP" target="_blank" rel="noopener">La classification des animaux</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Facile, joli et agréable</b><q>Super petit livre dont je suis ravie et que ma fille a beaucoup aimé. Les explications sont simples et les illustrations jolies. Je recommande cet article les yeux fermés.</q><cite>Avis Amazon, juin 2024 — sur <a href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener">La Forêt des Murmures</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Jolie histoire et jolies illustrations</b><q>Mon fils a bien retenu tout ce qui est expliqué et on a fait les activités de fin de chapitre comme les personnages.</q><cite>Avis Amazon, juillet 2024 — sur <a href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener">La Forêt des Murmures</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Mignon</b><q>Il relate bien ce qui pourrait se passer à l'école, l'aide de la petite boule lumineuse permet de bien expliquer aux enfants ce qu'il faut faire.</q><cite>Avis Amazon, juillet 2025 — sur <a href="https://www.amazon.fr/dp/B0F4MWLZY4" target="_blank" rel="noopener">Contre le harcèlement</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Agréable et instructif</b><q>Le concept de gravité est bien expliqué, c'est simple et, à la maison, nous avons suivi les idées d'activités de fin de chapitre qui sont sympa. Pour la liste d'activités de la fin du livre, c'est peut-être plus adapté aux enseignants pour la classe.</q><cite>Avis Amazon, juin 2024 — sur <a href="https://www.amazon.fr/dp/B0FX6Q8M94" target="_blank" rel="noopener">La gravité</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Très bon livre</b><q>J'ai beaucoup aimé l'histoire et mes enfants aussi. Elle est instructive, détaillée et facile à comprendre. Les illustrations sont très jolies. Je recommande.</q><cite>Avis Amazon, septembre 2024 — sur <a href="https://www.amazon.fr/dp/B0DF5TTQTD" target="_blank" rel="noopener">Le cycle de l'eau</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>L'essentiel pour débuter</b><q>L'auteure est à féliciter pour la clarté de l'exposé, ponctué par des phrases courtes et dotées d'un vocabulaire accessible au plus grand nombre. Un ouvrage à mettre assurément entre toutes les mains.</q><cite>Avis Amazon, mars 2026 — sur <a href="https://www.amazon.fr/dp/B0FHL1MT2D" target="_blank" rel="noopener">L'Univers à la portée de tous</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Surprenant et intéressant</b><q>J'ai beaucoup aimé découvrir le fonctionnement du cerveau. Ça remet plein de choses en question. Je conseille !</q><cite>Avis Amazon, avril 2026 — sur <a href="https://www.amazon.fr/dp/B0GVYJKSJF" target="_blank" rel="noopener">Le cerveau à la portée de tous</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Très ludique, belles illustrations</b><q>Ce livre est super. Il est écrit avec une grande logique et c'est un chouette outil éducatif que ma fille a adoré.</q><cite>Avis Amazon, septembre 2024 — sur <a href="https://www.amazon.fr/dp/B0DCSX6PPF" target="_blank" rel="noopener">La préhistoire</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Simple et démystifiant, j'adore !</b><q>Ce livre est vraiment très clair et instructif […] Ce mystère est devenu beaucoup moins mystérieux. Enfin une explication simple. J'aime beaucoup sa façon de simplifier les choses pour des novices comme moi.</q><cite>Avis Amazon, juin 2026 — sur <a href="https://www.amazon.fr/dp/B0GZF3FF1W" target="_blank" rel="noopener">Les trous noirs à la portée de tous</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Très instructif</b><q>L'histoire est simple et mignonne, les illustrations sont explicites.</q><cite>Avis Amazon, novembre 2024 — sur <a href="https://www.amazon.fr/dp/B0DF5TTQTD" target="_blank" rel="noopener">Le cycle de l'eau</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Idéal pour une première approche</b><q>Ce rapide et passionnant survol d'un sujet aussi complexe que la physique quantique […] Après avoir retracé les grandes lignes principales de cette discipline à l'aide d'un style clair et concis, Christèle Gierden nous révèle ses applications étonnantes jusqu'à notre quotidien.</q><cite>Avis Amazon, mars 2026 — sur <a href="https://www.amazon.fr/dp/B0GNN53Q3K" target="_blank" rel="noopener">La physique quantique à la portée de tous</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Livre très accessible</b><q>Livre très accessible qui permet de mieux comprendre ce mystère qu'est encore l'univers.</q><cite>Avis Amazon, janvier 2026 — sur <a href="https://www.amazon.fr/dp/B0FHL1MT2D" target="_blank" rel="noopener">L'Univers à la portée de tous</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Original et captivant</b><q>Des nouvelles originales et captivantes. J'achèterai le tome 2 à coup sûr.</q><cite>Avis Amazon, avril 2026 — sur <a href="https://www.amazon.fr/dp/B0FVLH7M4H" target="_blank" rel="noopener">Nouvelles mystérieuses — Tome 1</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Simple et efficace</b><q>Enfin des explications faciles à comprendre pour découvrir ce qu'est cette fameuse physique quantique.</q><cite>Avis Amazon, avril 2026 — sur <a href="https://www.amazon.fr/dp/B0GNN53Q3K" target="_blank" rel="noopener">La physique quantique à la portée de tous</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★☆</span><b>Plein de mystère et passionnant</b><q>Tout comme le tome 1, les nouvelles sont passionnantes. J'aurai aimé que ce soit un peu plus long, mais merci à l'auteure de nous plonger dans ces univers si différents et mystérieux.</q><cite>Avis Amazon, avril 2026 — sur <a href="https://www.amazon.fr/dp/B0FVLSBX71" target="_blank" rel="noopener">Nouvelles mystérieuses — Tome 2</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Je recommande !</b><q>Mes enfants adorent, je recommande !</q><cite>Avis Amazon, octobre 2025 — sur <a href="https://www.amazon.fr/dp/B0DCSX6PPF" target="_blank" rel="noopener">La préhistoire</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Tout mimi</b><q>C'est mignon et éducatif !</q><cite>Avis Amazon, juillet 2025 — sur <a href="https://www.amazon.fr/dp/B0DJ3R165T" target="_blank" rel="noopener">Contes de la forêt</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Bien sympa</b><q>Les histoires sont sympa, mon fils a beaucoup aimé. Il a aimé aussi les QR codes sur les métiers, c'est une bonne idée.</q><cite>Avis Amazon, juillet 2024 — sur <a href="https://www.amazon.fr/dp/B0D9C14T4W" target="_blank" rel="noopener">Les métiers</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Très bien</b><q>Sujet d'actualité ! Comme les autres Lily et Téo, il est sympa et bien fait.</q><cite>Avis Amazon, juillet 2025 — sur <a href="https://www.amazon.fr/dp/B0DWLNX1PJ" target="_blank" rel="noopener">Mission climat</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Je recommande !</b><q>Très bon livre, je recommande.</q><cite>Avis Amazon, octobre 2025 — sur <a href="https://www.amazon.fr/dp/B0DKJNB688" target="_blank" rel="noopener">Rome et les Romains</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Livres pour enfants</b><q>Super livres éducatifs et ludiques, je n'hésiterai pas à acheter la suite !</q><cite>Avis Amazon, mai 2024 — sur <a href="https://www.amazon.fr/dp/B0FX6Q8M94" target="_blank" rel="noopener">La gravité</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Super livre éducatif !</b><q>Super livre pour enfant, ludique, intéressant et jolies illustrations pour couronner le tout.</q><cite>Avis Amazon, août 2024 — sur <a href="https://www.amazon.fr/dp/B0FX6BSLJP" target="_blank" rel="noopener">La classification des animaux</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Mignon</b><q>Histoire mignonne avec une belle morale.</q><cite>Avis Amazon, juillet 2025 — sur <a href="https://www.amazon.fr/dp/B0DLBVXS27" target="_blank" rel="noopener">Lily et Téo sauvent Noël</a></cite></blockquote><blockquote class="more" hidden=""><span class="stars">★★★★★</span><b>Génial !</b><q>Très bon livre éducatif et les illustrations sont magnifiques ! Je recommande vivement.</q><cite>Avis Amazon, juin 2024 — sur <a href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener">La Forêt des Murmures</a></cite></blockquote></div><!--/avis-->
+    <p style="text-align:center"><button class="chip" id="moreAvis" onclick="document.querySelectorAll('#avis .more').forEach(e=>e.hidden=false);this.remove()">Voir plus d'avis</button></p>
+  </div>
+</section>
+
+<!-- LILY ET TEO -->
+<section class="block" id="lily-et-teo">
+  <div class="wrap">
+    <div class="head">
+      <img class="medal-s" src="medaillon.webp" alt="" aria-hidden="true" loading="lazy" decoding="async"><h2>La collection Lily et Téo</h2>
+      <p>Chaque album raconte une aventure et transmet de vraies connaissances. À lire en famille ou à exploiter en classe.<br><a class="yt" href="https://www.youtube.com/@lecoindescurieux.officiel" target="_blank" rel="noopener">▶ Voir les vidéos de Lily et Téo sur YouTube</a></p>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip on" data-f="all">Tous</button>
+      <button class="chip" data-f="vivant">Le vivant</button>
+      <button class="chip" data-f="sciences">Sciences</button>
+      <button class="chip" data-f="histoire">Histoire &amp; monde</button>
+      <button class="chip" data-f="ensemble">Vivre ensemble</button>
+      <button class="chip" data-f="fete">Noël &amp; activités</button>
+    </div>
+    <div class="grid" id="kids"><article class="card" data-f="vivant">
+    <a class="cover" style="--c:#3f8f4f" href="livres/foret-des-murmures.html" aria-label="Lily et Téo dans la Forêt des Murmures : présentation du livre">
+      <img src="covers/B0D8BVZ36F.jpg" alt="Couverture : Lily et Téo dans la Forêt des Murmures" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Lily et Téo dans la Forêt des Murmures</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/foret-des-murmures.html">Lily et Téo dans la Forêt des Murmures</a></h3>
+      <div class="meta">Vivant / non vivant, papillon, poisson, graine · Cycle&nbsp;1&nbsp;·&nbsp;3⁠–⁠6&nbsp;ans</div>
+      <a class="more-l" href="livres/foret-des-murmures.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="vivant">
+    <a class="cover" style="--c:#c27a2c" href="livres/classification-des-animaux.html" aria-label="La Grande Légende des Animaux : présentation du livre">
+      <img src="covers/B0FX6BSLJP.jpg" alt="Couverture : La Grande Légende des Animaux" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>La Grande Légende des Animaux</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/classification-des-animaux.html">La Grande Légende des Animaux</a></h3>
+      <div class="meta">La classification des animaux · Cycle&nbsp;1&nbsp;·&nbsp;3⁠–⁠6&nbsp;ans</div>
+      <a class="more-l" href="livres/classification-des-animaux.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0FX6BSLJP" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="vivant">
+    <a class="cover" style="--c:#d0577a" href="livres/corps-et-5-sens.html" aria-label="Les parties du corps et les 5 sens : présentation du livre">
+      <img src="covers/B0DMT1QX3R.jpg" alt="Couverture : Les parties du corps et les 5 sens" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Les parties du corps et les 5 sens</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/corps-et-5-sens.html">Les parties du corps et les 5 sens</a></h3>
+      <div class="meta">Découvrir son corps en bougeant · Cycle&nbsp;1&nbsp;·&nbsp;3⁠–⁠6&nbsp;ans</div>
+      <a class="more-l" href="livres/corps-et-5-sens.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0DMT1QX3R" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="sciences">
+    <a class="cover" style="--c:#5a63c9" href="livres/gravite.html" aria-label="Les mystères de la gravité : présentation du livre">
+      <img src="covers/B0FX6Q8M94.jpg" alt="Couverture : Les mystères de la gravité" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Les mystères de la gravité</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/gravite.html">Les mystères de la gravité</a></h3>
+      <div class="meta">La gravité sur Terre et dans l'espace · Cycles&nbsp;2⁠–⁠3&nbsp;·&nbsp;8⁠–⁠11&nbsp;ans</div>
+      <a class="more-l" href="livres/gravite.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0FX6Q8M94" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="sciences">
+    <a class="cover" style="--c:#2f8ec9" href="livres/cycle-de-l-eau.html" aria-label="Le cycle de l'eau : présentation du livre">
+      <img src="covers/B0DF5TTQTD.jpg" alt="Couverture : Le cycle de l'eau" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Le cycle de l'eau</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/cycle-de-l-eau.html">Le cycle de l'eau</a></h3>
+      <div class="meta">Évaporation, nuages, pluie, neige · Cycles&nbsp;2⁠–⁠3&nbsp;·&nbsp;7⁠–⁠10&nbsp;ans</div>
+      <a class="more-l" href="livres/cycle-de-l-eau.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0DF5TTQTD" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="sciences">
+    <a class="cover" style="--c:#3aa39a" href="livres/mission-climat.html" aria-label="Mission climat : présentation du livre">
+      <img src="covers/B0DWLNX1PJ.jpg" alt="Couverture : Mission climat" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Mission climat</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/mission-climat.html">Mission climat</a></h3>
+      <div class="meta">Le réchauffement climatique · Cycles&nbsp;2⁠–⁠3&nbsp;·&nbsp;8⁠–⁠11&nbsp;ans</div>
+      <a class="more-l" href="livres/mission-climat.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0DWLNX1PJ" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="histoire">
+    <a class="cover" style="--c:#9a6a3a" href="livres/prehistoire.html" aria-label="Lily et Téo remontent le temps : présentation du livre">
+      <img src="covers/B0DCSX6PPF.jpg" alt="Couverture : Lily et Téo remontent le temps" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Lily et Téo remontent le temps</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/prehistoire.html">Lily et Téo remontent le temps</a></h3>
+      <div class="meta">Les hommes préhistoriques · Cycles&nbsp;2⁠–⁠3&nbsp;·&nbsp;8⁠–⁠11&nbsp;ans</div>
+      <a class="more-l" href="livres/prehistoire.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0DCSX6PPF" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="histoire">
+    <a class="cover" style="--c:#b4472f" href="livres/rome-et-les-romains.html" aria-label="L'Histoire de Rome et les Romains : présentation du livre">
+      <img src="covers/B0DKJNB688.jpg" alt="Couverture : L'Histoire de Rome et les Romains" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>L'Histoire de Rome et les Romains</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/rome-et-les-romains.html">L'Histoire de Rome et les Romains</a></h3>
+      <div class="meta">Rémus et Romulus, Alésia, le Rubicon · Cycles&nbsp;2⁠–⁠3&nbsp;·&nbsp;8⁠–⁠11&nbsp;ans</div>
+      <a class="more-l" href="livres/rome-et-les-romains.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0DKJNB688" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="histoire">
+    <a class="cover" style="--c:#c99a2a" href="livres/tour-du-monde-monuments.html" aria-label="Lily et Téo font le tour du monde : présentation du livre">
+      <img src="covers/B0DV3SR37H.jpg" alt="Couverture : Lily et Téo font le tour du monde" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Lily et Téo font le tour du monde</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/tour-du-monde-monuments.html">Lily et Téo font le tour du monde</a></h3>
+      <div class="meta">Les plus beaux monuments · Cycles&nbsp;2⁠–⁠3&nbsp;·&nbsp;6⁠–⁠11&nbsp;ans</div>
+      <a class="more-l" href="livres/tour-du-monde-monuments.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0DV3SR37H" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="ensemble">
+    <a class="cover" style="--c:#6d7f2f" href="livres/les-metiers.html" aria-label="Les métiers : présentation du livre">
+      <img src="covers/B0D9C14T4W.jpg" alt="Couverture : Les métiers" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Les métiers</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/les-metiers.html">Les métiers</a></h3>
+      <div class="meta">Une journée d'orientation · Cycles&nbsp;2⁠–⁠3&nbsp;·&nbsp;6⁠–⁠11&nbsp;ans</div>
+      <a class="more-l" href="livres/les-metiers.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0D9C14T4W" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="ensemble">
+    <a class="cover" style="--c:#7a5cc8" href="livres/contre-le-harcelement.html" aria-label="Lily et Téo contre le harcèlement : présentation du livre">
+      <img src="covers/B0F4MWLZY4.jpg" alt="Couverture : Lily et Téo contre le harcèlement" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Lily et Téo contre le harcèlement</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/contre-le-harcelement.html">Lily et Téo contre le harcèlement</a></h3>
+      <div class="meta">Apprendre à agir à l'école · Cycles&nbsp;2⁠–⁠3&nbsp;·&nbsp;6⁠–⁠11&nbsp;ans</div>
+      <a class="more-l" href="livres/contre-le-harcelement.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0F4MWLZY4" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="fete">
+    <a class="cover" style="--c:#c7372f" href="livres/lily-et-teo-sauvent-noel.html" aria-label="Lily et Téo sauvent Noël : présentation du livre">
+      <img src="covers/B0DLBVXS27.jpg" alt="Couverture : Lily et Téo sauvent Noël" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Lily et Téo sauvent Noël</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/lily-et-teo-sauvent-noel.html">Lily et Téo sauvent Noël</a></h3>
+      <div class="meta">Bonus recette et étoile en papier · Cycles&nbsp;1⁠–⁠2&nbsp;·&nbsp;3⁠–⁠9&nbsp;ans</div>
+      <a class="more-l" href="livres/lily-et-teo-sauvent-noel.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0DLBVXS27" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="fete">
+    <a class="cover" style="--c:#e08a2c" href="livres/coloriage-animaux-du-monde.html" aria-label="Coloriage : les animaux du monde : présentation du livre">
+      <img src="covers/B0G6Z4HQQ7.jpg" alt="Couverture : Coloriage : les animaux du monde" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Coloriage : les animaux du monde</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/coloriage-animaux-du-monde.html">Coloriage : les animaux du monde</a></h3>
+      <div class="meta">Cahier de coloriage Lily et Téo · Dès&nbsp;4&nbsp;ans</div>
+      <a class="more-l" href="livres/coloriage-animaux-du-monde.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0G6Z4HQQ7" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="ensemble">
+    <a class="cover tall" style="--c:#4f7d3a" href="livres/contes-de-la-foret.html" aria-label="Contes de la forêt : présentation du livre">
+      <img src="covers/B0DJ3R165T.jpg" alt="Couverture : Contes de la forêt" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>Contes de la forêt</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/contes-de-la-foret.html">Contes de la forêt</a></h3>
+      <div class="meta">33 histoires, 33 valeurs à transmettre · 3⁠–⁠7&nbsp;ans</div>
+      <a class="more-l" href="livres/contes-de-la-foret.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0DJ3R165T" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="histoire">
+    <a class="cover tall" style="--c:#2f6f9a" href="livres/20-histoires-vraies.html" aria-label="20 Histoires vraies pour enfants : présentation du livre">
+      <img src="covers/B0DS8L5WXB.jpg" alt="Couverture : 20 Histoires vraies pour enfants" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Lily et Téo</small><strong>20 Histoires vraies pour enfants</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/20-histoires-vraies.html">20 Histoires vraies pour enfants</a></h3>
+      <div class="meta">Des aventures réelles qui font rêver · 7⁠–⁠12&nbsp;ans</div>
+      <a class="more-l" href="livres/20-histoires-vraies.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0DS8L5WXB" target="_blank" rel="noopener">Voir sur Amazon</a>
+    </div>
+  </article></div><!--/kids-->
+  </div>
+</section>
+
+
+<!-- APERÇU DES ACTIVITÉS -->
+<section class="block acts" id="activites">
+  <div class="wrap">
+    <div class="head">
+      <h2>Un aperçu des activités</h2>
+      <p>Dans chaque livre Lily et Téo, l'histoire se prolonge par des activités à faire en famille ou en classe. En voici quelques-unes.</p>
+    </div>
+    <div class="actrow" id="acts"><div class="act"><div class="thumb" data-act="0"><img src="activites/classification-cartes.jpg" alt="Des cartes pour jouer en apprenant — La classification des animaux" loading="lazy"></div><div class="txt"><b>Des cartes pour jouer en apprenant</b><small>La classification des animaux</small><span>À la fin de chaque chapitre, 4 cartes d'animaux de la classe étudiée, à copier pour un mémory ou un jeu des familles.</span><a class="btn amz" href="https://www.amazon.fr/dp/B0FX6BSLJP" target="_blank" rel="noopener">Toutes les activités sont dans le livre →</a></div></div><div class="act"><div class="thumb" data-act="1"><img src="activites/noel-recette.jpg" alt="Les biscuits de Téo et l'étoile de Lily — Lily et Téo sauvent Noël" loading="lazy"></div><div class="txt"><b>Les biscuits de Téo et l'étoile de Lily</b><small>Lily et Téo sauvent Noël</small><span>La recette des biscuits à la cannelle que Téo prépare dans l'histoire, et l'étoile en papier de Lily à fabriquer : deux activités pas à pas pour préparer Noël avec les enfants.</span><a class="btn amz" href="https://www.amazon.fr/dp/B0DLBVXS27" target="_blank" rel="noopener">Toutes les activités sont dans le livre →</a></div></div><div class="act"><div class="thumb" data-act="2"><img src="activites/corps-pantin.jpg" alt="Un pantin à construire — Le corps et les 5 sens" loading="lazy"></div><div class="txt"><b>Un pantin à construire</b><small>Le corps et les 5 sens</small><span>Un pantin articulé à découper et assembler, et des visages coupés en deux à reconstituer : de quoi nommer les parties du corps en jouant.</span><a class="btn amz" href="https://www.amazon.fr/dp/B0DMT1QX3R" target="_blank" rel="noopener">Toutes les activités sont dans le livre →</a></div></div><div class="act"><div class="thumb" data-act="3"><img src="activites/monde-carte.jpg" alt="Une carte et des devinettes — Le tour du monde" loading="lazy"></div><div class="txt"><b>Une carte et des devinettes</b><small>Le tour du monde</small><span>Une carte du monde pour situer les 11 monuments visités par Lily et Téo, et un parchemin de devinettes « Qui suis-je ? » pour réviser.</span><a class="btn amz" href="https://www.amazon.fr/dp/B0DV3SR37H" target="_blank" rel="noopener">Toutes les activités sont dans le livre →</a></div></div><div class="act"><div class="thumb" data-act="4"><img src="activites/foret-papillon.jpg" alt="Découper, ranger, classer — La Forêt des Murmures" loading="lazy"></div><div class="txt"><b>Découper, ranger, classer</b><small>La Forêt des Murmures</small><span>Les étapes de la vie du papillon à remettre dans l'ordre, et des images à trier entre animal, végétal et minéral, comme Lily et Téo.</span><a class="btn amz" href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener">Toutes les activités sont dans le livre →</a></div></div></div><!--/acts-->
+  </div>
+</section>
+
+<!-- ENSEIGNANTS -->
+<section class="block teach" id="enseignants">
+  <div class="wrap cols">
+    <div>
+      <h2>Enseignants : 1 livre = une séquence clé en main</h2>
+      <p style="margin-top:14px;font-size:1.08rem">Presque tous les albums Lily et Téo (sauf « Les métiers » et « Contre le harcèlement ») sont accompagnés d'un organigramme pluridisciplinaire pour construire toute une séquence à partir de l'histoire.</p>
+      <ul>
+        <li>Français, sciences, histoire, arts : les pistes sont déjà prêtes</li>
+        <li>Du cycle 1 au cycle 3, en lien avec les programmes</li>
+        <li>Des quiz interactifs pour vérifier les acquis (d'autres sont à venir)</li>
+      </ul>
+      <p class="contact-ens">Une question, un retour sur un livre utilisé en classe ? Écrivez-moi : <a href="mailto:contact@lecoindescurieux.eu">contact@lecoindescurieux.eu</a></p>
+    </div>
+    <div class="orga-feat" id="orgaFeat"><img src="orgas/B0DF5TTQTD.jpg" alt="Exemple d'organigramme : Le cycle de l'eau" data-o="B0DF5TTQTD" loading="lazy" decoding="async"><p>Exemple : Le cycle de l'eau — cliquez pour agrandir</p></div><!--/orgaFeat-->
+  </div>
+  <div class="wrap">
+    <h3 class="gal-title">Découvrez les organigrammes, livre par livre</h3>
+    <div class="chips" id="cyc"><button class="chip on" data-c="Tous">Tous</button><button class="chip " data-c="Cycle 1">Cycle 1</button><button class="chip " data-c="Cycle 2">Cycle 2</button><button class="chip " data-c="Cycle 3">Cycle 3</button></div><!--/cyc-->
+    <div class="gal" id="gal"><div class="og"><div class="thumb" data-o="B0DF5TTQTD"><img src="orgas/B0DF5TTQTD.jpg" alt="Organigramme pluridisciplinaire : Le cycle de l'eau" loading="lazy"></div><div class="meta2"><img src="covers/B0DF5TTQTD.jpg" alt="" loading="lazy" decoding="async"><div><b>Le cycle de l'eau</b><br><small>Cycle 2</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0DF5TTQTD" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div><div class="og"><div class="thumb" data-o="B0D8BVZ36F"><img src="orgas/B0D8BVZ36F.jpg" alt="Organigramme pluridisciplinaire : La Forêt des Murmures" loading="lazy"></div><div class="meta2"><img src="covers/B0D8BVZ36F.jpg" alt="" loading="lazy" decoding="async"><div><b>La Forêt des Murmures</b><br><small>Cycle 1</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0D8BVZ36F" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div><div class="og"><div class="thumb" data-o="B0DV3SR37H"><img src="orgas/B0DV3SR37H.jpg" alt="Organigramme pluridisciplinaire : Le tour du monde" loading="lazy"></div><div class="meta2"><img src="covers/B0DV3SR37H.jpg" alt="" loading="lazy" decoding="async"><div><b>Le tour du monde</b><br><small>Cycle 2 · Cycle 3</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0DV3SR37H" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div><div class="og"><div class="thumb" data-o="B0DWLNX1PJ"><img src="orgas/B0DWLNX1PJ.jpg" alt="Organigramme pluridisciplinaire : Mission climat" loading="lazy"></div><div class="meta2"><img src="covers/B0DWLNX1PJ.jpg" alt="" loading="lazy" decoding="async"><div><b>Mission climat</b><br><small>Cycle 2 · Cycle 3</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0DWLNX1PJ" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div><div class="og"><div class="thumb" data-o="B0DLBVXS27"><img src="orgas/B0DLBVXS27.jpg" alt="Organigramme pluridisciplinaire : Lily et Téo sauvent Noël" loading="lazy"></div><div class="meta2"><img src="covers/B0DLBVXS27.jpg" alt="" loading="lazy" decoding="async"><div><b>Lily et Téo sauvent Noël</b><br><small>Cycle 1 · Cycle 2</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0DLBVXS27" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div><div class="og"><div class="thumb" data-o="B0DMT1QX3R"><img src="orgas/B0DMT1QX3R.jpg" alt="Organigramme pluridisciplinaire : Le corps et les 5 sens" loading="lazy"></div><div class="meta2"><img src="covers/B0DMT1QX3R.jpg" alt="" loading="lazy" decoding="async"><div><b>Le corps et les 5 sens</b><br><small>Cycle 1</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0DMT1QX3R" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div><div class="og"><div class="thumb" data-o="B0DKJNB688"><img src="orgas/B0DKJNB688.jpg" alt="Organigramme pluridisciplinaire : Rome et les Romains" loading="lazy"></div><div class="meta2"><img src="covers/B0DKJNB688.jpg" alt="" loading="lazy" decoding="async"><div><b>Rome et les Romains</b><br><small>Cycle 2 · Cycle 3</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0DKJNB688" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div><div class="og"><div class="thumb" data-o="B0DCSX6PPF"><img src="orgas/B0DCSX6PPF.jpg" alt="Organigramme pluridisciplinaire : La préhistoire" loading="lazy"></div><div class="meta2"><img src="covers/B0DCSX6PPF.jpg" alt="" loading="lazy" decoding="async"><div><b>La préhistoire</b><br><small>Cycle 2 · Cycle 3</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0DCSX6PPF" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div><div class="og"><div class="thumb" data-o="B0FX6Q8M94"><img src="orgas/B0FX6Q8M94.jpg" alt="Organigramme pluridisciplinaire : La gravité" loading="lazy"></div><div class="meta2"><img src="covers/B0FX6Q8M94.jpg" alt="" loading="lazy" decoding="async"><div><b>La gravité</b><br><small>Cycle 2 · Cycle 3</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0FX6Q8M94" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div><div class="og"><div class="thumb" data-o="B0FX6BSLJP"><img src="orgas/B0FX6BSLJP.jpg" alt="Organigramme pluridisciplinaire : La classification des animaux" loading="lazy"></div><div class="meta2"><img src="covers/B0FX6BSLJP.jpg" alt="" loading="lazy" decoding="async"><div><b>La classification des animaux</b><br><small>Cycle 1</small></div></div><a class="btn amz" href="https://www.amazon.fr/dp/B0FX6BSLJP" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div></div><!--/gal-->
+  </div>
+</section>
+<div class="lb" id="lb" hidden><button aria-label="Fermer">×</button><img alt="" loading="lazy" decoding="async"><p></p></div>
+
+<!-- SCIENCE -->
+<section class="block sci-block" id="grandes-questions">
+  <div class="wrap">
+    <div class="head">
+      <h2>Les grandes questions à la portée de tous</h2>
+    </div>
+    <p class="tagline">Parce que les grandes questions méritent des réponses claires.</p>
+    <div class="hookq">
+      <div>Peut-on voir dans le passé ?</div>
+      <div>Comment naît un trou noir ?</div>
+      <div>Une particule peut-elle être à deux endroits à la fois ?</div>
+      <div>Comment le cerveau invente-t-il ce que l'on voit ?</div>
+    </div>
+    <div class="grid" id="sci"><article class="card" data-f="">
+    <a class="cover" style="--c:#d9b25f" href="livres/univers-a-la-portee-de-tous.html" aria-label="L'Univers à la portée de tous : présentation du livre">
+      <img src="covers/B0FHL1MT2D.jpg" alt="Couverture : L'Univers à la portée de tous" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Christèle Gierden</small><strong>L'Univers à la portée de tous</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/univers-a-la-portee-de-tous.html">L'Univers à la portée de tous</a></h3>
+      <div class="meta">Du Big Bang aux confins du système solaire</div>
+      <a class="more-l" href="livres/univers-a-la-portee-de-tous.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0FHL1MT2D" target="_blank" rel="noopener">Disponible sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="">
+    <a class="cover" style="--c:#b88a3a" href="livres/trous-noirs-a-la-portee-de-tous.html" aria-label="Les trous noirs à la portée de tous : présentation du livre">
+      <img src="covers/B0GZF3FF1W.jpg" alt="Couverture : Les trous noirs à la portée de tous" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Christèle Gierden</small><strong>Les trous noirs à la portée de tous</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/trous-noirs-a-la-portee-de-tous.html">Les trous noirs à la portée de tous</a></h3>
+      <div class="meta">Espace-temps et secrets de l'Univers</div>
+      <a class="more-l" href="livres/trous-noirs-a-la-portee-de-tous.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0GZF3FF1W" target="_blank" rel="noopener">Disponible sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="">
+    <a class="cover" style="--c:#7f8fe0" href="livres/physique-quantique-a-la-portee-de-tous.html" aria-label="La physique quantique à la portée de tous : présentation du livre">
+      <img src="covers/B0GNN53Q3K.jpg" alt="Couverture : La physique quantique à la portée de tous" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Christèle Gierden</small><strong>La physique quantique à la portée de tous</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/physique-quantique-a-la-portee-de-tous.html">La physique quantique à la portée de tous</a></h3>
+      <div class="meta">Superposition, intrication, Schrödinger</div>
+      <a class="more-l" href="livres/physique-quantique-a-la-portee-de-tous.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0GNN53Q3K" target="_blank" rel="noopener">Disponible sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="">
+    <a class="cover" style="--c:#d07aa0" href="livres/cerveau-a-la-portee-de-tous.html" aria-label="Le cerveau à la portée de tous : présentation du livre">
+      <img src="covers/B0GVYJKSJF.jpg" alt="Couverture : Le cerveau à la portée de tous" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Christèle Gierden</small><strong>Le cerveau à la portée de tous</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/cerveau-a-la-portee-de-tous.html">Le cerveau à la portée de tous</a></h3>
+      <div class="meta">Comprendre ses pensées et ses émotions</div>
+      <a class="more-l" href="livres/cerveau-a-la-portee-de-tous.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0GVYJKSJF" target="_blank" rel="noopener">Disponible sur Amazon</a>
+    </div>
+  </article></div><!--/sci-->
+
+    <h3 class="subhead">Nouvelles mystérieuses inspirées de faits scientifiques</h3>
+    <div class="grid" id="myst"><article class="card" data-f="">
+    <a class="cover" style="--c:#6a8fb0" href="livres/nouvelles-mysterieuses-tome-1.html" aria-label="Nouvelles mystérieuses — Tome 1 : présentation du livre">
+      <img src="covers/B0FVLH7M4H.jpg" alt="Couverture : Nouvelles mystérieuses — Tome 1" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Christèle Gierden</small><strong>Nouvelles mystérieuses — Tome 1</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/nouvelles-mysterieuses-tome-1.html">Nouvelles mystérieuses — Tome 1</a></h3>
+      <div class="meta">8 nouvelles à la limite de nos sciences</div>
+      <a class="more-l" href="livres/nouvelles-mysterieuses-tome-1.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0FVLH7M4H" target="_blank" rel="noopener">Disponible sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="">
+    <a class="cover" style="--c:#8a6ab0" href="livres/nouvelles-mysterieuses-tome-2.html" aria-label="Nouvelles mystérieuses — Tome 2 : présentation du livre">
+      <img src="covers/B0FVLSBX71.jpg" alt="Couverture : Nouvelles mystérieuses — Tome 2" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Christèle Gierden</small><strong>Nouvelles mystérieuses — Tome 2</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/nouvelles-mysterieuses-tome-2.html">Nouvelles mystérieuses — Tome 2</a></h3>
+      <div class="meta">Nouvelles inspirées de faits scientifiques</div>
+      <a class="more-l" href="livres/nouvelles-mysterieuses-tome-2.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0FVLSBX71" target="_blank" rel="noopener">Disponible sur Amazon</a>
+    </div>
+  </article></div><!--/myst-->
+  </div>
+</section>
+
+
+<section class="block autrice" id="autrice">
+  <div class="wrap">
+    <div class="intro">
+      <img src="logo.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+      <h2>Une autrice, deux plumes</h2>
+      <p>« Derrière Le coin des curieux, il y a une seule personne et une même passion : donner envie de comprendre le monde. Pour les enfants, je signe <b>Maîtresse Christèle</b>, et pour les curieux plus grands, c'est <b>Christèle Gierden</b>. »</p>
+      <p class="sign">Christèle</p>
+    </div>
+    <div class="plumes">
+      <div class="plume kids">
+        <img src="medaillon.webp" alt="Lily et Téo" loading="lazy" decoding="async">
+        <h3>Maîtresse Christèle</h3>
+        <p class="role">Pour les 3-12 ans, les familles et les enseignants</p>
+        <blockquote class="voix">« En classe, je manquais de livres qui apportent des connaissances et, en même temps, qui racontent une aventure qui touche les enfants. Nous, les enseignants, avons l'habitude de créer nos propres outils : j'ai donc écrit les Lily et Téo. »</blockquote>
+        <p>Plus de vingt ans dans l'Éducation nationale. Chaque album suit les programmes et se termine par des activités et un organigramme pour construire une séquence, en classe ou à la maison.</p>
+        <p class="anecdote">Petite anecdote : Lily et Téo sont les prénoms de ses propres enfants.</p>
+        <a class="btn amz" href="https://www.amazon.fr/stores/author/B0GZL1WYBG" target="_blank" rel="noopener">Tous ses livres sur Amazon</a>
+      </div>
+      <div class="plume sci">
+        <img src="logo.png" alt="" loading="lazy" decoding="async">
+        <h3>Christèle Gierden</h3>
+        <p class="role">Pour les ados et les adultes</p>
+        <blockquote class="voix">« Mon fils de 13 ans me posait plein de questions sur l'Univers. J'ai eu envie de tout lui noter dans un mémo, puis c'est devenu un livre de vulgarisation scientifique. Le premier de la série. »</blockquote>
+        <p>Depuis, la série répond à d'autres grandes questions (les trous noirs, la physique quantique, le cerveau), sans équation et sans jargon. Les Nouvelles mystérieuses partent, elles, de faits scientifiques réels pour raconter des histoires troublantes.</p>
+        <a class="btn amz" href="https://www.amazon.fr/stores/author/B0GZL2NRPW" target="_blank" rel="noopener">Tous ses livres sur Amazon</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="block quiz" id="quiz">
+  <div class="wrap">
+    <div class="box">
+      <img src="medaillon.webp" alt="" aria-hidden="true" style="width:120px" loading="lazy" decoding="async">
+      <div>
+        <h2>Tu as lu le livre ? Teste-toi avec Lily et Téo !</h2>
+        <p style="margin-top:8px;color:var(--muted)">Un quiz interactif pour vérifier ce que tu as retenu. Choisis ton quiz :</p>
+        <div class="quizlist">
+          <a class="btn amz" href="https://claude.ai/artifact/Gk3aaBMMsms3qd8mu5cTq6" target="_blank" rel="noopener">La Forêt des Murmures</a>
+          <a class="btn amz" href="https://claude.ai/artifact/UzDNs592WpWTviozh9eYr1" target="_blank" rel="noopener">Le cycle de l'eau</a>
+          <a class="btn amz" href="https://claude.ai/artifact/2xkp3256H783VfiPnAQt3L" target="_blank" rel="noopener">Les mystères de la gravité</a>
+          <a class="btn amz" href="https://claude.ai/artifact/FjHhthCeWckVEwgrF4owpx" target="_blank" rel="noopener">Rome et les Romains</a>
+          <a class="btn ghost" href="https://claude.ai/artifact/HVDQXdWbqyi3TGTFNpqYeK" target="_blank" rel="noopener">Bonus : les volcans (vidéo YouTube)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="block faq" id="faq">
+  <div class="wrap">
+    <div class="head"><h2>Questions fréquentes</h2><p>Les réponses aux questions que se posent souvent les parents et les enseignants.</p></div>
+    <div class="fqs"><details class="fq"><summary>Quel livre choisir pour un enfant de maternelle (3-6 ans) ?</summary><p>Pour les 3-6 ans (cycle 1), la collection Lily et Téo propose « Lily et Téo dans la Forêt des Murmures » (le vivant et le non-vivant, le papillon, la graine), « La Grande Légende des Animaux » (la classification des animaux) et « Les parties du corps et les 5 sens ». « Contes de la forêt » réunit 33 petites histoires pour les 3-7 ans, chacune autour d&#x27;une valeur à transmettre (honnêteté, respect des autres et des lieux publics, prudence…) ou d&#x27;une émotion à apprivoiser (peur du noir, déménagement, nouvelle école…) : idéales au moment du coucher, mais aussi en classe ou à la maison.</p></details><details class="fq"><summary>Quels livres pour un enfant de 6 à 8 ans (CP, CE1, CE2) ?</summary><p>Pour les 6-8 ans (cycle 2) : « Le cycle de l&#x27;eau », « Lily et Téo font le tour du monde » (les plus beaux monuments), « Les métiers », « Lily et Téo contre le harcèlement » et « Lily et Téo sauvent Noël ». Dès 8 ans, l&#x27;enfant peut aussi lire la gravité, la préhistoire, Rome ou le climat.</p></details><details class="fq"><summary>Quels livres pour un enfant de 9 à 11 ans (CM1, CM2, 6e) ?</summary><p>Pour les 9-11 ans (cycle 3) : « Les mystères de la gravité », « Lily et Téo remontent le temps : les hommes préhistoriques », « L&#x27;Histoire de Rome et les Romains », « Mission climat » et « Lily et Téo font le tour du monde ». « 20 histoires vraies pour enfants » raconte de vraies aventures pour les 7-12 ans.</p></details><details class="fq"><summary>Les livres Lily et Téo peuvent-ils être utilisés en classe ?</summary><p>Oui, ils ont été conçus pour ça. Presque tous les albums sont accompagnés d&#x27;un organigramme pluridisciplinaire pour construire une séquence complète à partir de l&#x27;histoire : français, sciences, histoire, mathématiques, arts. Les livres contiennent aussi des activités à photocopier (cartes, frises, jeux) et certains renvoient à un quiz interactif. « Lily et Téo contre le harcèlement », sans organigramme, est lui aussi pensé pour la classe : c&#x27;est un support idéal pour éduquer les élèves contre le harcèlement scolaire.</p></details><details class="fq"><summary>Que contiennent les livres Lily et Téo en plus de l&#x27;histoire ?</summary><p>Chaque album prolonge l&#x27;aventure par des activités à faire en famille ou en classe : cartes à jouer pour un mémory ou un jeu des familles, images à découper et à classer, recette de cuisine, carte du monde et devinettes, pantin à construire… Certains livres proposent un QR code vers un quiz interactif.</p></details><details class="fq"><summary>Quel livre pour lutter contre le harcèlement scolaire ?</summary><p>« Lily et Téo contre le harcèlement » a été écrit pour éduquer les enfants de 6 à 11 ans contre le harcèlement scolaire : reconnaître les situations, en parler, savoir comment agir. Il est particulièrement adapté à un travail en classe. Pour les plus petits, les « Contes de la forêt » font découvrir 33 valeurs, comme le respect des autres et l&#x27;honnêteté, à travers 33 petites histoires.</p></details><details class="fq"><summary>Existe-t-il des livres de vulgarisation scientifique pour ados et adultes ?</summary><p>Oui, sous le nom de Christèle Gierden, la collection « Les grandes questions à la portée de tous » explique l&#x27;Univers, les trous noirs, la physique quantique et le cerveau, sans équation et sans jargon. Pour les amateurs de mystère, les « Nouvelles mystérieuses » (tomes 1 et 2) explorent la frontière entre science et inexpliqué.</p></details><details class="fq"><summary>Quelle idée de cadeau de Noël pour un enfant curieux ?</summary><p>« Lily et Téo sauvent Noël » (3-9 ans) avec sa recette de biscuits et ses activités de découpage, le cahier de coloriage « Les animaux du monde » (dès 4 ans) pour un petit budget, ou les « Contes de la forêt » en grand format pour un beau cadeau.</p></details><details class="fq"><summary>Où acheter les livres de Maîtresse Christèle et de Christèle Gierden ?</summary><p>Tous les livres sont disponibles sur Amazon. Chaque bouton « Voir sur Amazon » de ce site mène directement à la bonne fiche.</p></details><details class="fq"><summary>Qui est l&#x27;autrice des livres ?</summary><p>Derrière Le coin des curieux, il y a une seule autrice. Elle signe Maîtresse Christèle pour les enfants (la collection Lily et Téo) et Christèle Gierden pour les ados et les adultes (Les grandes questions à la portée de tous, Nouvelles mystérieuses). Enseignante durant plus de vingt ans, elle écrit des livres qui transmettent de vraies connaissances, en lien avec les programmes scolaires.</p></details></div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Le coin des curieux</h4>
+        <p>Livres de Maîtresse Christèle (collection Lily et Téo) et de Christèle Gierden (Les grandes questions à la portée de tous). Tous les livres sont disponibles sur Amazon.</p>
+        <a href="#faq">Questions fréquentes</a>
+      </div>
+      <div>
+        <h4>Sur Amazon</h4>
+        <a href="https://www.amazon.fr/stores/author/B0GZL1WYBG" target="_blank" rel="noopener">Tous les livres de Maîtresse Christèle</a>
+        <a href="https://www.amazon.fr/stores/author/B0GZL2NRPW" target="_blank" rel="noopener">Tous les livres de Christèle Gierden</a>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <a href="https://www.instagram.com/coindescurieux.officiel" target="_blank" rel="noopener">Instagram @coindescurieux.officiel</a>
+        <a href="https://www.facebook.com/lecoindescurieux" target="_blank" rel="noopener">Facebook — Le coin des curieux</a>
+        <a href="https://www.youtube.com/@lecoindescurieux.officiel" target="_blank" rel="noopener">YouTube — Lily et Téo</a>
+        <a href="mailto:contact@lecoindescurieux.eu">contact@lecoindescurieux.eu</a>
+      </div>
+    </div>
+    <p class="legal">© Le coin des curieux — Maîtresse Christèle · Christèle Gierden. Les commandes se font sur Amazon. · <a href="mentions-legales.html">Mentions légales</a></p>
+  </div>
+</footer>
+
+<script>
+const A = a => "https://www.amazon.fr/dp/" + a;
+const SLUG={"B0D8BVZ36F": "foret-des-murmures", "B0FX6BSLJP": "classification-des-animaux", "B0DMT1QX3R": "corps-et-5-sens", "B0FX6Q8M94": "gravite", "B0DF5TTQTD": "cycle-de-l-eau", "B0DWLNX1PJ": "mission-climat", "B0DCSX6PPF": "prehistoire", "B0DKJNB688": "rome-et-les-romains", "B0DV3SR37H": "tour-du-monde-monuments", "B0D9C14T4W": "les-metiers", "B0F4MWLZY4": "contre-le-harcelement", "B0DLBVXS27": "lily-et-teo-sauvent-noel", "B0G6Z4HQQ7": "coloriage-animaux-du-monde", "B0DJ3R165T": "contes-de-la-foret", "B0DS8L5WXB": "20-histoires-vraies", "B0FHL1MT2D": "univers-a-la-portee-de-tous", "B0GZF3FF1W": "trous-noirs-a-la-portee-de-tous", "B0GNN53Q3K": "physique-quantique-a-la-portee-de-tous", "B0GVYJKSJF": "cerveau-a-la-portee-de-tous", "B0FVLH7M4H": "nouvelles-mysterieuses-tome-1", "B0FVLSBX71": "nouvelles-mysterieuses-tome-2"};
+const P = a => SLUG[a] ? "livres/"+SLUG[a]+".html" : A(a);
+const kids = [
+  {a:"B0D8BVZ36F",t:"Lily et Téo dans la Forêt des Murmures",d:"Vivant / non vivant, papillon, poisson, graine",age:"Cycle 1 · 3⁠–⁠6 ans",f:"vivant",c:"#3f8f4f"},
+  {a:"B0FX6BSLJP",t:"La Grande Légende des Animaux",d:"La classification des animaux",age:"Cycle 1 · 3⁠–⁠6 ans",f:"vivant",c:"#c27a2c"},
+  {a:"B0DMT1QX3R",t:"Les parties du corps et les 5 sens",d:"Découvrir son corps en bougeant",age:"Cycle 1 · 3⁠–⁠6 ans",f:"vivant",c:"#d0577a"},
+  {a:"B0FX6Q8M94",t:"Les mystères de la gravité",d:"La gravité sur Terre et dans l'espace",age:"Cycles 2⁠–⁠3 · 8⁠–⁠11 ans",f:"sciences",c:"#5a63c9"},
+  {a:"B0DF5TTQTD",t:"Le cycle de l'eau",d:"Évaporation, nuages, pluie, neige",age:"Cycles 2⁠–⁠3 · 7⁠–⁠10 ans",f:"sciences",c:"#2f8ec9"},
+  {a:"B0DWLNX1PJ",t:"Mission climat",d:"Le réchauffement climatique",age:"Cycles 2⁠–⁠3 · 8⁠–⁠11 ans",f:"sciences",c:"#3aa39a"},
+  {a:"B0DCSX6PPF",t:"Lily et Téo remontent le temps",d:"Les hommes préhistoriques",age:"Cycles 2⁠–⁠3 · 8⁠–⁠11 ans",f:"histoire",c:"#9a6a3a"},
+  {a:"B0DKJNB688",t:"L'Histoire de Rome et les Romains",d:"Rémus et Romulus, Alésia, le Rubicon",age:"Cycles 2⁠–⁠3 · 8⁠–⁠11 ans",f:"histoire",c:"#b4472f"},
+  {a:"B0DV3SR37H",t:"Lily et Téo font le tour du monde",d:"Les plus beaux monuments",age:"Cycles 2⁠–⁠3 · 6⁠–⁠11 ans",f:"histoire",c:"#c99a2a"},
+  {a:"B0D9C14T4W",t:"Les métiers",d:"Une journée d'orientation",age:"Cycles 2⁠–⁠3 · 6⁠–⁠11 ans",f:"ensemble",c:"#6d7f2f"},
+  {a:"B0F4MWLZY4",t:"Lily et Téo contre le harcèlement",d:"Apprendre à agir à l'école",age:"Cycles 2⁠–⁠3 · 6⁠–⁠11 ans",f:"ensemble",c:"#7a5cc8"},
+  {a:"B0DLBVXS27",t:"Lily et Téo sauvent Noël",d:"Bonus recette et étoile en papier",age:"Cycles 1⁠–⁠2 · 3⁠–⁠9 ans",f:"fete",c:"#c7372f"},
+  {a:"B0G6Z4HQQ7",t:"Coloriage : les animaux du monde",d:"Cahier de coloriage Lily et Téo",age:"Dès 4 ans",f:"fete",c:"#e08a2c"},
+  {a:"B0DJ3R165T",tall:1,t:"Contes de la forêt",d:"33 histoires, 33 valeurs à transmettre",age:"3⁠–⁠7 ans",f:"ensemble",c:"#4f7d3a"},
+  {a:"B0DS8L5WXB",tall:1,t:"20 Histoires vraies pour enfants",d:"Des aventures réelles qui font rêver",age:"7⁠–⁠12 ans",f:"histoire",c:"#2f6f9a"}
+];
+const sci = [
+  {a:"B0FHL1MT2D",t:"L'Univers à la portée de tous",d:"Du Big Bang aux confins du système solaire",c:"#d9b25f"},
+  {a:"B0GZF3FF1W",t:"Les trous noirs à la portée de tous",d:"Espace-temps et secrets de l'Univers",c:"#b88a3a"},
+  {a:"B0GNN53Q3K",t:"La physique quantique à la portée de tous",d:"Superposition, intrication, Schrödinger",c:"#7f8fe0"},
+  {a:"B0GVYJKSJF",t:"Le cerveau à la portée de tous",d:"Comprendre ses pensées et ses émotions",c:"#d07aa0"}
+];
+const myst = [
+  {a:"B0FVLH7M4H",t:"Nouvelles mystérieuses — Tome 1",d:"8 nouvelles à la limite de nos sciences",c:"#6a8fb0"},
+  {a:"B0FVLSBX71",t:"Nouvelles mystérieuses — Tome 2",d:"Nouvelles inspirées de faits scientifiques",c:"#8a6ab0"}
+];
+function card(b, label, btn){
+  return `<article class="card" data-f="${b.f||''}">
+    <a class="cover${b.tall?' tall':''}" style="--c:${b.c}" href="${P(b.a)}" aria-label="${b.t} : présentation du livre">
+      <img src="covers/${b.a}.jpg" alt="Couverture : ${b.t}" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>${label}</small><strong>${b.t}</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="${P(b.a)}">${b.t}</a></h3>
+      <div class="meta">${b.d}${b.age?' · '+b.age:''}</div>
+      <a class="more-l" href="${P(b.a)}">Découvrir le livre →</a>
+      <a class="btn amz" href="${A(b.a)}" target="_blank" rel="noopener">${btn}</a>
+    </div>
+  </article>`;
+}
+document.getElementById('kids').innerHTML = kids.map(b=>card(b,"Lily et Téo","Voir sur Amazon")).join('');
+document.getElementById('sci').innerHTML = sci.map(b=>card(b,"Christèle Gierden","Disponible sur Amazon")).join('');
+document.getElementById('myst').innerHTML = myst.map(b=>card(b,"Christèle Gierden","Disponible sur Amazon")).join('');
+// img loaded -> hide placeholder
+document.querySelectorAll('.cover img').forEach(i=>{i.addEventListener('load',()=>{const p=i.nextElementSibling;if(p)p.remove();});});
+document.getElementById('chips').addEventListener('click',e=>{
+  const b=e.target.closest('.chip'); if(!b) return;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c===b));
+  const f=b.dataset.f;
+  document.querySelectorAll('#kids .card').forEach(c=>c.style.display=(f==='all'||c.dataset.f===f)?'':'none');
+});
+
+// ===== Accueil : éventail, guide, Noël, coups de coeur
+const ALL = {
+ B0D8BVZ36F:{t:"La Forêt des Murmures",a:[3,6],s:"sciences",c:1},
+ B0FX6BSLJP:{t:"La classification des animaux",a:[3,6],s:"sciences",c:1},
+ B0DMT1QX3R:{t:"Le corps et les 5 sens",a:[3,6],s:"sciences",c:1},
+ B0DF5TTQTD:{t:"Le cycle de l'eau",a:[7,10],s:"sciences",c:1},
+ B0FX6Q8M94:{t:"La gravité",a:[8,11],s:"sciences",c:1},
+ B0DWLNX1PJ:{t:"Mission climat",a:[8,11],s:"sciences",c:1},
+ B0DCSX6PPF:{t:"La préhistoire",a:[8,11],s:"histoire",c:1},
+ B0DKJNB688:{t:"Rome et les Romains",a:[8,11],s:"histoire",c:1},
+ B0DV3SR37H:{t:"Le tour du monde",a:[6,11],s:"histoire",c:1},
+ B0D9C14T4W:{t:"Les métiers",a:[6,11],s:"emotions",c:0},
+ B0F4MWLZY4:{t:"Contre le harcèlement",a:[6,11],s:"emotions",c:1},
+ B0DLBVXS27:{t:"Lily et Téo sauvent Noël",a:[4,7],s:"contes",c:0},
+ B0G6Z4HQQ7:{t:"Coloriage animaux du monde",a:[4,8],s:"activites",c:0},
+ B0DJ3R165T:{t:"Contes de la forêt",a:[3,7],s:["contes","emotions"],c:1},
+ B0DS8L5WXB:{t:"20 histoires vraies",a:[8,12],s:"histoire",c:1},
+ B0FHL1MT2D:{t:"L'Univers à la portée de tous",a:[13,99],s:"sciences",c:0},
+ B0GZF3FF1W:{t:"Les trous noirs à la portée de tous",a:[13,99],s:"sciences",c:0},
+ B0GNN53Q3K:{t:"La physique quantique à la portée de tous",a:[13,99],s:"sciences",c:0},
+ B0GVYJKSJF:{t:"Le cerveau à la portée de tous",a:[13,99],s:"emotions",c:0},
+ B0FVLH7M4H:{t:"Nouvelles mystérieuses — Tome 1",a:[15,99],s:"contes",c:0},
+ B0FVLSBX71:{t:"Nouvelles mystérieuses — Tome 2",a:[15,99],s:"contes",c:0}
+};
+const img = a => `covers/${a}.jpg`;
+
+// fan
+const fanList=["B0D8BVZ36F","B0FX6Q8M94","B0DLBVXS27","B0DCSX6PPF","B0GNN53Q3K","B0FHL1MT2D","B0GZF3FF1W"];
+document.getElementById('fan').innerHTML = fanList.map((a,i)=>{
+  const r=(i-(fanList.length-1)/2)*5, y=Math.abs(i-(fanList.length-1)/2)*10;
+  return `<a href="${A(a)}" target="_blank" rel="noopener" style="transform:translateY(${y}px) rotate(${r}deg);z-index:${10-Math.abs(i-3)}" aria-label="${ALL[a].t}"><img src="${img(a)}" alt="${ALL[a].t}"></a>`;
+}).join('');
+
+// finder
+const F={who:"enfant",age:"6-8",sub:"tous"};
+const opts={
+ who:[["enfant","Mon enfant"],["classe","Ma classe"],["moi","Moi / un ado"]],
+ age:[["3-5","3-5 ans"],["6-8","6-8 ans"],["9-12","9-12 ans"],["13+","Ado / adulte"]],
+ sub:[["tous","Tout"],["sciences","Sciences"],["histoire","Histoire & monde"],["emotions","Émotions & vivre ensemble"],["contes","Histoires & contes"],["activites","Activités"]]
+};
+function chips(k){
+  document.getElementById('f-'+k).innerHTML=opts[k].map(([v,l])=>`<button class="chip ${F[k]===v?'on':''}" data-k="${k}" data-v="${v}">${l}</button>`).join('');
+}
+function runFinder(){
+  ['who','age','sub'].forEach(chips);
+  if(F.who==='moi'&&F.age!=='13+'){F.age='13+';chips('age');}
+  const [lo,hi]=F.age==='13+'?[13,99]:F.age.split('-').map(Number);
+  let r=Object.entries(ALL).filter(([a,b])=>b.a[0]<=hi&&b.a[1]>=lo);
+  if(F.sub!=='tous') r=r.filter(([a,b])=>[].concat(b.s).includes(F.sub));
+  if(F.who==='classe') r=r.filter(([a,b])=>b.c);
+  r=r.slice(0,6);
+  document.getElementById('f-res').innerHTML = r.length? r.map(([a,b])=>`<div class="res"><a class="rl" href="${P(a)}"><img src="${img(a)}" alt="${b.t}">${b.t}</a><a class="rd" href="${P(a)}">Découvrir le livre →</a><a class="ra" href="${A(a)}" target="_blank" rel="noopener">Voir sur Amazon →</a></div>`).join('')
+   : '<p class="empty">Pas encore de livre pour cette combinaison — essayez un autre sujet !</p>';
+}
+document.getElementById('trouver').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;F[b.dataset.k]=b.dataset.v;runFinder();});
+runFinder();
+
+// Noël par budget
+const budgets=[["Moins de 12 €",["B0G6Z4HQQ7"]],["Moins de 15 €",["B0DLBVXS27","B0D8BVZ36F","B0FHL1MT2D"]],["Un beau cadeau",["B0DJ3R165T","B0DS8L5WXB"]]];
+document.getElementById('budgets').innerHTML=budgets.map(([t,l])=>`<div class="budget"><h3>${t}</h3><div class="mini">${l.map(a=>`<a href="${P(a)}"><img src="${img(a)}" alt="${ALL[a].t}">${ALL[a].t}</a>`).join('')}</div></div>`).join('');
+
+// coups de coeur
+const coeur=[["B0DS8L5WXB","Dès 8 ans","20 héros réels, d'Einstein à Malala"],["B0FVLH7M4H","Ados & adultes","8 nouvelles aux frontières de la science"],["B0GNN53Q3K","Dès 13 ans","La quantique sans une seule équation"],["B0FVLSBX71","Ados & adultes","La suite des mystères"]];
+document.getElementById('coeur').innerHTML=coeur.map(([a,tag,d])=>`<a class="item" href="${P(a)}"><img src="${img(a)}" alt="${ALL[a].t}"><span class="tag">${tag}</span><b>${ALL[a].t}</b><small>${d}</small></a>`).join('');
+
+// avis clients réels (Amazon, achats vérifiés)
+const AVIS=[
+ {a:"B0FHL1MT2D",n:5,titre:"Très bien fait",t:"Génial ! Mon fils de 15 ans a adoré et compris plein de choses, moi aussi d'ailleurs !",d:"juillet 2025"},
+ {a:"B0DF5TTQTD",n:5,titre:"Super",t:"Merci pour ce joli petit livre qui explique si bien des notions que nous avons du mal à expliquer à nos enfants. Je recommande fortement toute la série de livres.",d:"septembre 2024"},
+ {a:"B0GZF3FF1W",n:5,titre:"Les trous noirs de 7 à 77 ans",t:"L'auteure réussit le tour de force de mettre à la portée du plus grand nombre un sujet aussi complexe que les trous noirs sans omettre pour autant les dernières hypothèses […] Chaudement recommandé.",d:"août 2026"},
+ {a:"B0DLBVXS27",n:5,titre:"Je recommande !",t:"Très belle histoire que mes enfants ont beaucoup aimé, à acheter !",d:"octobre 2025"},
+ {a:"B0DJ3R165T",n:5,titre:"Livre magnifique",t:"Les illustrations sont magnifiques. Il y a une continuité avec les personnages (Zoé la lapine, Max l'écureuil, Léon le lion, etc.). Très bon livre.",d:"décembre 2025"},
+ {a:"B0DS8L5WXB",n:5,titre:"Intéressant",t:"Mon fils a bien aimé et a appris plein de choses, il m'en parle encore.",d:"juillet 2025"},
+ {a:"B0DCSX6PPF",n:5,titre:"Super",t:"Mon fils a adoré, c'est bien expliqué, mignon et complet. Les images pour faire la frise chronologique à la fin sont très bien.",d:"août 2024"},
+ {a:"B0FX6BSLJP",n:5,titre:"Je recommande !",t:"Mes enfants et moi sommes devenus accro à Lily et Téo, ils adorent les personnages et j'aime le fait que ces histoires soient éducatives, à acheter de toute urgence !",d:"octobre 2025"},
+ {a:"B0D9C14T4W",n:5,titre:"Merci Maîtresse Christèle",t:"Super petit livre bien illustré qui a régalé les enfants. Habituellement les enfants ne sont pas férus de lecture mais avec toute la série de Maîtresse Christèle ils se régalent.",d:"septembre 2024"},
+ {a:"B0DMT1QX3R",n:5,titre:"Drôle et mignon",t:"Super pour les parties du corps et les sens, impeccable pour la maternelle.",d:"juillet 2025"},
+ {a:"B0D8BVZ36F",n:5,titre:"Je recommande !",t:"Encore un livre que mes enfants ont adoré, je ne suis jamais déçue avec Lily et Téo !",d:"octobre 2025"},
+ {a:"B0DKJNB688",n:5,titre:"Très détaillé",t:"On est plongé dans l'histoire des Romains, c'est complet et bien détaillé. Une jolie aventure en même temps qu'une leçon d'Histoire vivante.",d:"novembre 2024"},
+ {a:"B0D8BVZ36F",n:5,titre:"Il est tout mignon, les illustrations sont très jolies",t:"Bonne idée de reprendre les cours de l'école maternelle. Ma fille était contente, c'est bien expliqué et cette fois-ci aussi j'ai fait avec elle les activités des fins de chapitre. C'est simple et efficace.",d:"juin 2024"},
+ {a:"B0FX6Q8M94",n:5,titre:"Bon choix",t:"Très sympa, approche simple d'un thème pas forcément évident pour mon fils qui a bien accroché avec cette histoire. Jolies illustrations.",d:"juin 2024"},
+ {a:"B0DV3SR37H",n:5,titre:"Mignon et instructif",t:"Mon fils a beaucoup aimé. Il a presque toute la série des Lily et Téo.",d:"juillet 2025"},
+ {a:"B0FX6BSLJP",n:5,titre:"Super format",t:"L'histoire est très mignonne, les illustrations sont jolies et le format est très bien pour un album pour enfants. Je n'ai pas encore essayé les activités proposées à la fin du livre mais j'ai photocopié les cartes et on fait des jeux de mémoire.",d:"juillet 2024"},
+ {a:"B0D8BVZ36F",n:5,titre:"Facile, joli et agréable",t:"Super petit livre dont je suis ravie et que ma fille a beaucoup aimé. Les explications sont simples et les illustrations jolies. Je recommande cet article les yeux fermés.",d:"juin 2024"},
+ {a:"B0D8BVZ36F",n:5,titre:"Jolie histoire et jolies illustrations",t:"Mon fils a bien retenu tout ce qui est expliqué et on a fait les activités de fin de chapitre comme les personnages.",d:"juillet 2024"},
+ {a:"B0F4MWLZY4",n:5,titre:"Mignon",t:"Il relate bien ce qui pourrait se passer à l'école, l'aide de la petite boule lumineuse permet de bien expliquer aux enfants ce qu'il faut faire.",d:"juillet 2025"},
+ {a:"B0FX6Q8M94",n:5,titre:"Agréable et instructif",t:"Le concept de gravité est bien expliqué, c'est simple et, à la maison, nous avons suivi les idées d'activités de fin de chapitre qui sont sympa. Pour la liste d'activités de la fin du livre, c'est peut-être plus adapté aux enseignants pour la classe.",d:"juin 2024"},
+ {a:"B0DF5TTQTD",n:5,titre:"Très bon livre",t:"J'ai beaucoup aimé l'histoire et mes enfants aussi. Elle est instructive, détaillée et facile à comprendre. Les illustrations sont très jolies. Je recommande.",d:"septembre 2024"},
+ {a:"B0FHL1MT2D",n:5,titre:"L'essentiel pour débuter",t:"L'auteure est à féliciter pour la clarté de l'exposé, ponctué par des phrases courtes et dotées d'un vocabulaire accessible au plus grand nombre. Un ouvrage à mettre assurément entre toutes les mains.",d:"mars 2026"},
+ {a:"B0GVYJKSJF",n:5,titre:"Surprenant et intéressant",t:"J'ai beaucoup aimé découvrir le fonctionnement du cerveau. Ça remet plein de choses en question. Je conseille !",d:"avril 2026"},
+ {a:"B0DCSX6PPF",n:5,titre:"Très ludique, belles illustrations",t:"Ce livre est super. Il est écrit avec une grande logique et c'est un chouette outil éducatif que ma fille a adoré.",d:"septembre 2024"},
+ {a:"B0GZF3FF1W",n:5,titre:"Simple et démystifiant, j'adore !",t:"Ce livre est vraiment très clair et instructif […] Ce mystère est devenu beaucoup moins mystérieux. Enfin une explication simple. J'aime beaucoup sa façon de simplifier les choses pour des novices comme moi.",d:"juin 2026"},
+ {a:"B0DF5TTQTD",n:5,titre:"Très instructif",t:"L'histoire est simple et mignonne, les illustrations sont explicites.",d:"novembre 2024"},
+ {a:"B0GNN53Q3K",n:5,titre:"Idéal pour une première approche",t:"Ce rapide et passionnant survol d'un sujet aussi complexe que la physique quantique […] Après avoir retracé les grandes lignes principales de cette discipline à l'aide d'un style clair et concis, Christèle Gierden nous révèle ses applications étonnantes jusqu'à notre quotidien.",d:"mars 2026"},
+ {a:"B0FHL1MT2D",n:5,titre:"Livre très accessible",t:"Livre très accessible qui permet de mieux comprendre ce mystère qu'est encore l'univers.",d:"janvier 2026"},
+ {a:"B0FVLH7M4H",n:5,titre:"Original et captivant",t:"Des nouvelles originales et captivantes. J'achèterai le tome 2 à coup sûr.",d:"avril 2026"},
+ {a:"B0GNN53Q3K",n:5,titre:"Simple et efficace",t:"Enfin des explications faciles à comprendre pour découvrir ce qu'est cette fameuse physique quantique.",d:"avril 2026"},
+ {a:"B0FVLSBX71",n:4,titre:"Plein de mystère et passionnant",t:"Tout comme le tome 1, les nouvelles sont passionnantes. J'aurai aimé que ce soit un peu plus long, mais merci à l'auteure de nous plonger dans ces univers si différents et mystérieux.",d:"avril 2026"},
+ {a:"B0DCSX6PPF",n:5,titre:"Je recommande !",t:"Mes enfants adorent, je recommande !",d:"octobre 2025"},
+ {a:"B0DJ3R165T",n:5,titre:"Tout mimi",t:"C'est mignon et éducatif !",d:"juillet 2025"},
+ {a:"B0D9C14T4W",n:5,titre:"Bien sympa",t:"Les histoires sont sympa, mon fils a beaucoup aimé. Il a aimé aussi les QR codes sur les métiers, c'est une bonne idée.",d:"juillet 2024"},
+ {a:"B0DWLNX1PJ",n:5,titre:"Très bien",t:"Sujet d'actualité ! Comme les autres Lily et Téo, il est sympa et bien fait.",d:"juillet 2025"},
+ {a:"B0DKJNB688",n:5,titre:"Je recommande !",t:"Très bon livre, je recommande.",d:"octobre 2025"},
+ {a:"B0FX6Q8M94",n:5,titre:"Livres pour enfants",t:"Super livres éducatifs et ludiques, je n'hésiterai pas à acheter la suite !",d:"mai 2024"},
+ {a:"B0FX6BSLJP",n:5,titre:"Super livre éducatif !",t:"Super livre pour enfant, ludique, intéressant et jolies illustrations pour couronner le tout.",d:"août 2024"},
+ {a:"B0DLBVXS27",n:5,titre:"Mignon",t:"Histoire mignonne avec une belle morale.",d:"juillet 2025"},
+ {a:"B0D8BVZ36F",n:5,titre:"Génial !",t:"Très bon livre éducatif et les illustrations sont magnifiques ! Je recommande vivement.",d:"juin 2024"},
+];
+document.getElementById('avis').innerHTML=AVIS.map((v,i)=>({...v,i})).map(v=>`<blockquote ${v.i>=6?'class="more" hidden':''}><span class="stars">${'★'.repeat(v.n)+'☆'.repeat(5-v.n)}</span><b>${v.titre}</b><q>${v.t}</q><cite>Avis Amazon, ${v.d} — sur <a href="${A(v.a)}" target="_blank" rel="noopener">${ALL[v.a].t}</a></cite></blockquote>`).join('');
+
+// ===== organigrammes enseignants
+const ORGAS=[ {a:"B0DF5TTQTD",cy:["Cycle 2"]}, {a:"B0D8BVZ36F",cy:["Cycle 1"]}, {a:"B0DV3SR37H",cy:["Cycle 2","Cycle 3"]}, {a:"B0DWLNX1PJ",cy:["Cycle 2","Cycle 3"]}, {a:"B0DLBVXS27",cy:["Cycle 1","Cycle 2"]}, {a:"B0DMT1QX3R",cy:["Cycle 1"]}, {a:"B0DKJNB688",cy:["Cycle 2","Cycle 3"]}, {a:"B0DCSX6PPF",cy:["Cycle 2","Cycle 3"]}, {a:"B0FX6Q8M94",cy:["Cycle 2","Cycle 3"]}, {a:"B0FX6BSLJP",cy:["Cycle 1"]} ];
+const CYCLES=["Tous","Cycle 1","Cycle 2","Cycle 3"]; let cyc="Tous";
+function og(o){const b=ALL[o.a];return `<div class="og"><div class="thumb" data-o="${o.a}"><img src="orgas/${o.a}.jpg" alt="Organigramme pluridisciplinaire : ${b.t}" loading="lazy"></div><div class="meta2"><img src="covers/${o.a}.jpg" alt=""><div><b>${b.t}</b><br><small>${o.cy.join(" · ")}</small></div></div><a class="btn amz" href="${A(o.a)}" target="_blank" rel="noopener">La séquence complète est dans le livre →</a></div>`;}
+function drawGal(){
+ document.getElementById('cyc').innerHTML=CYCLES.map(c=>`<button class="chip ${c===cyc?'on':''}" data-c="${c}">${c}</button>`).join('');
+ const l=ORGAS.filter(o=>cyc==="Tous"||o.cy.includes(cyc));
+ document.getElementById('gal').innerHTML=l.length?l.map(og).join(''):'<p class="empty">Les organigrammes de ce cycle arrivent bientôt.</p>';
+}
+document.getElementById('cyc').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;cyc=b.dataset.c;drawGal();});
+drawGal();
+const f0=ORGAS[0]; document.getElementById('orgaFeat').innerHTML=`<img src="orgas/${f0.a}.jpg" alt="Exemple d'organigramme : ${ALL[f0.a].t}" data-o="${f0.a}"><p>Exemple : ${ALL[f0.a].t} — cliquez pour agrandir</p>`;
+const lb=document.getElementById('lb');
+const ACTS=[ {img:"activites/classification-cartes.jpg",a:"B0FX6BSLJP",titre:"Des cartes pour jouer en apprenant",txt:"À la fin de chaque chapitre, 4 cartes d'animaux de la classe étudiée, à copier pour un mémory ou un jeu des familles."}, {img:"activites/noel-recette.jpg",a:"B0DLBVXS27",titre:"Les biscuits de Téo et l'étoile de Lily",txt:"La recette des biscuits à la cannelle que Téo prépare dans l'histoire, et l'étoile en papier de Lily à fabriquer : deux activités pas à pas pour préparer Noël avec les enfants."}, {img:"activites/corps-pantin.jpg",a:"B0DMT1QX3R",titre:"Un pantin à construire",txt:"Un pantin articulé à découper et assembler, et des visages coupés en deux à reconstituer : de quoi nommer les parties du corps en jouant."}, {img:"activites/monde-carte.jpg",a:"B0DV3SR37H",titre:"Une carte et des devinettes",txt:"Une carte du monde pour situer les 11 monuments visités par Lily et Téo, et un parchemin de devinettes « Qui suis-je ? » pour réviser."}, {img:"activites/foret-papillon.jpg",a:"B0D8BVZ36F",titre:"Découper, ranger, classer",txt:"Les étapes de la vie du papillon à remettre dans l'ordre, et des images à trier entre animal, végétal et minéral, comme Lily et Téo."} ];
+document.getElementById('acts').innerHTML=ACTS.map((x,i)=>`<div class="act"><div class="thumb" data-act="${i}"><img src="${x.img}" alt="${x.titre} — ${ALL[x.a].t}" loading="lazy"></div><div class="txt"><b>${x.titre}</b><small>${ALL[x.a].t}</small><span>${x.txt}</span><a class="btn amz" href="${A(x.a)}" target="_blank" rel="noopener">Toutes les activités sont dans le livre →</a></div></div>`).join('');
+document.addEventListener('click',e=>{const ta=e.target.closest('[data-act]');if(ta){const x=ACTS[ta.dataset.act];lb.querySelector('img').src=x.img;lb.querySelector('p').textContent=x.titre+' — '+ALL[x.a].t;lb.hidden=false;return;}});
+document.addEventListener('click',e=>{const t=e.target.closest('[data-o]');if(t){lb.querySelector('img').src=`orgas/${t.dataset.o}.jpg`;lb.querySelector('p').textContent=ALL[t.dataset.o].t;lb.hidden=false;}else if(e.target.closest('#lb button')||e.target===lb){lb.hidden=true;}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.hidden=true;});
+</script>
+</body>
+</html>
