@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://lecoindescurieux.eu/sitemap.xml
+
+User-agent: *
+Disallow: /videos/shorts/
