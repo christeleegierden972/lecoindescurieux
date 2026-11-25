@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /videos/shorts/
 
 Sitemap: https://lecoindescurieux.eu/sitemap.xml
-
-User-agent: *
-Disallow: /videos/shorts/
