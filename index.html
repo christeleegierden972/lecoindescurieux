@@ -620,6 +620,17 @@ footer h4{color:var(--gold-l)}
     </div>
     <a class="vidlink" href="videos/big-bang.html"><img src="videos/big-bang.jpg" alt="" width="220" loading="lazy"><span><small>Nouveau · en vidéo</small><strong>Le Big Bang était-il vraiment une explosion ?</strong><em>4 minutes pour comprendre, racontées par l'autrice →</em></span></a>
     <div class="grid" id="sci"><article class="card" data-f="">
+    <a class="cover" style="--c:#e0702c" href="livres/gravite-a-la-portee-de-tous.html" aria-label="La gravité à la portée de tous : présentation du livre">
+      <img src="covers/B0HSYJGJKV.jpg" alt="Couverture : La gravité à la portée de tous" loading="lazy" onerror="this.remove()">
+      <div class="ph"><small>Christèle Gierden</small><strong>La gravité à la portée de tous</strong><i>Couverture à venir</i></div>
+    </a>
+    <div class="body">
+      <h3><a class="tl" href="livres/gravite-a-la-portee-de-tous.html">La gravité à la portée de tous</a></h3>
+      <div class="meta">Nouveau · De Newton à Einstein, la force qui tient l'Univers</div>
+      <a class="more-l" href="livres/gravite-a-la-portee-de-tous.html">Découvrir le livre →</a>
+      <a class="btn amz" href="https://www.amazon.fr/dp/B0HSYJGJKV" target="_blank" rel="noopener">Disponible sur Amazon</a>
+    </div>
+  </article><article class="card" data-f="">
     <a class="cover" style="--c:#d9b25f" href="livres/univers-a-la-portee-de-tous.html" aria-label="L'Univers à la portée de tous : présentation du livre">
       <img src="covers/B0FHL1MT2D.jpg" alt="Couverture : L'Univers à la portée de tous" loading="lazy" onerror="this.remove()">
       <div class="ph"><small>Christèle Gierden</small><strong>L'Univers à la portée de tous</strong><i>Couverture à venir</i></div>
@@ -784,7 +795,7 @@ footer h4{color:var(--gold-l)}
 
 <script>
 const A = a => "https://www.amazon.fr/dp/" + a;
-const SLUG={"B0D8BVZ36F": "foret-des-murmures", "B0FX6BSLJP": "classification-des-animaux", "B0DMT1QX3R": "corps-et-5-sens", "B0FX6Q8M94": "gravite", "B0DF5TTQTD": "cycle-de-l-eau", "B0DWLNX1PJ": "mission-climat", "B0DCSX6PPF": "prehistoire", "B0DKJNB688": "rome-et-les-romains", "B0DV3SR37H": "tour-du-monde-monuments", "B0D9C14T4W": "les-metiers", "B0F4MWLZY4": "contre-le-harcelement", "B0DLBVXS27": "lily-et-teo-sauvent-noel", "B0G6Z4HQQ7": "coloriage-animaux-du-monde", "B0DJ3R165T": "contes-de-la-foret", "B0DS8L5WXB": "20-histoires-vraies", "B0FHL1MT2D": "univers-a-la-portee-de-tous", "B0GZF3FF1W": "trous-noirs-a-la-portee-de-tous", "B0GNN53Q3K": "physique-quantique-a-la-portee-de-tous", "B0GVYJKSJF": "cerveau-a-la-portee-de-tous", "B0FVLH7M4H": "nouvelles-mysterieuses-tome-1", "B0FVLSBX71": "nouvelles-mysterieuses-tome-2"};
+const SLUG={"B0HSYJGJKV": "gravite-a-la-portee-de-tous", "B0D8BVZ36F": "foret-des-murmures", "B0FX6BSLJP": "classification-des-animaux", "B0DMT1QX3R": "corps-et-5-sens", "B0FX6Q8M94": "gravite", "B0DF5TTQTD": "cycle-de-l-eau", "B0DWLNX1PJ": "mission-climat", "B0DCSX6PPF": "prehistoire", "B0DKJNB688": "rome-et-les-romains", "B0DV3SR37H": "tour-du-monde-monuments", "B0D9C14T4W": "les-metiers", "B0F4MWLZY4": "contre-le-harcelement", "B0DLBVXS27": "lily-et-teo-sauvent-noel", "B0G6Z4HQQ7": "coloriage-animaux-du-monde", "B0DJ3R165T": "contes-de-la-foret", "B0DS8L5WXB": "20-histoires-vraies", "B0FHL1MT2D": "univers-a-la-portee-de-tous", "B0GZF3FF1W": "trous-noirs-a-la-portee-de-tous", "B0GNN53Q3K": "physique-quantique-a-la-portee-de-tous", "B0GVYJKSJF": "cerveau-a-la-portee-de-tous", "B0FVLH7M4H": "nouvelles-mysterieuses-tome-1", "B0FVLSBX71": "nouvelles-mysterieuses-tome-2"};
 const P = a => SLUG[a] ? "livres/"+SLUG[a]+".html" : A(a);
 const kids = [
   {a:"B0D8BVZ36F",t:"Lily et Téo dans la Forêt des Murmures",d:"Vivant / non vivant, papillon, poisson, graine",age:"Cycle 1 · 3⁠–⁠6 ans",f:"vivant",c:"#3f8f4f"},
@@ -804,6 +815,7 @@ const kids = [
   {a:"B0DS8L5WXB",tall:1,t:"20 Histoires vraies pour enfants",d:"Des aventures réelles qui font rêver",age:"7⁠–⁠12 ans",f:"histoire",c:"#2f6f9a"}
 ];
 const sci = [
+  {a:"B0HSYJGJKV",t:"La gravité à la portée de tous",d:"Nouveau · De Newton à Einstein, la force qui tient l'Univers",c:"#e0702c"},
   {a:"B0FHL1MT2D",t:"L'Univers à la portée de tous",d:"Du Big Bang aux confins du système solaire",c:"#d9b25f"},
   {a:"B0GZF3FF1W",t:"Les trous noirs à la portée de tous",d:"Espace-temps et secrets de l'Univers",c:"#b88a3a"},
   {a:"B0GNN53Q3K",t:"La physique quantique à la portée de tous",d:"Superposition, intrication, Schrödinger",c:"#7f8fe0"},
@@ -856,6 +868,7 @@ const ALL = {
  B0G6Z4HQQ7:{t:"Coloriage animaux du monde",a:[4,8],s:"activites",c:0},
  B0DJ3R165T:{t:"Contes de la forêt",a:[3,7],s:["contes","emotions"],c:1},
  B0DS8L5WXB:{t:"20 histoires vraies",a:[8,12],s:"histoire",c:1},
+ B0HSYJGJKV:{t:"La gravité à la portée de tous",a:[15,99],s:"sciences",c:0},
  B0FHL1MT2D:{t:"L'Univers à la portée de tous",a:[13,99],s:"sciences",c:0},
  B0GZF3FF1W:{t:"Les trous noirs à la portée de tous",a:[13,99],s:"sciences",c:0},
  B0GNN53Q3K:{t:"La physique quantique à la portée de tous",a:[13,99],s:"sciences",c:0},
@@ -866,7 +879,7 @@ const ALL = {
 const img = a => `covers/${a}.jpg`;
 
 // fan
-const fanList=["B0D8BVZ36F","B0FX6Q8M94","B0DLBVXS27","B0DCSX6PPF","B0GNN53Q3K","B0FHL1MT2D","B0GZF3FF1W"];
+const fanList=["B0D8BVZ36F","B0FX6Q8M94","B0DLBVXS27","B0DCSX6PPF","B0HSYJGJKV","B0FHL1MT2D","B0GZF3FF1W"];
 document.getElementById('fan').innerHTML = fanList.map((a,i)=>{
   const r=(i-(fanList.length-1)/2)*5, y=Math.abs(i-(fanList.length-1)/2)*10;
   return `<a href="${A(a)}" target="_blank" rel="noopener" style="transform:translateY(${y}px) rotate(${r}deg);z-index:${10-Math.abs(i-3)}" aria-label="${ALL[a].t}"><img src="${img(a)}" alt="${ALL[a].t}"></a>`;
